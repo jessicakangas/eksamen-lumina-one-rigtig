@@ -31,7 +31,7 @@
 
 
 
- /* Globale nulstillinger og skrifttyper */
+ /*Globale nulstillinger og skrifttyper */
 
  /* Nulstiller browserens standard-margener og sikrer korrekt boks-størrelse */
     * {
@@ -87,11 +87,11 @@
  /* De enkelte links inde i menuen */
 
  .navbar-links a {
-    color: var(--farve-navbar-text);  /* Anvender den dæmpede brune farve til link-tekst */
+    color: var(--farve-navbar-text);/* Anvender den dæmpede brune farve til link-tekst */
     font-size: 0.9em; /* Gør link-teksten lidt mindre end standard for at skabe en subtil effekt */
     font-weight: 500; /*Giver teksten en flot mellemfyldig vægt*/
     letter-spacing: 1px; /*Giver lidt luft mellem bogstaverne for at forbedre læsbarheden */
-    text-transform: uppercase;  /* Gør link-teksten til store bogstaver */
+    text-transform: uppercase;/* Gør link-teksten til store bogstaver */
     transition: color 0.3s ease; /* Tilføjer en glidende overgangseffekt, når farven ændres ved hover */
  }
 
@@ -132,9 +132,8 @@
 /* --Hero-sektion styling-- */
 
 /* Hoved container for hero-sektionen */
-
 #heroSection {
-    position: relative; /*Gør det muligt at placere teksten absolut oven på billedet
+    position: relative; /*Gør det muligt at placere teksten absolut oven på billedet*/
     width: 100%; /* Gør hero-sektionen fuld bredde */
     height: 100vh; /* Gør hero-sektionen høj nok til at fylde hele viewportens højde */
     overflow: hidden; /* Sikre at indholdet ikke stikker uden for sektionen */
@@ -146,11 +145,46 @@
     top:0; /* Placerer billedet øverst i containeren */
     left:0; /* Placerer billedet helt til venstre i containeren */
     width:100%; /* Gør billedet fuld bredde */
-    height:100%; /* Gør billedet høj nok til at fylde hele containeren
+    height:100%; /* Gør billedet høj nok til at fylde hele containeren*/
     object-fit: cover; /* Sikrer at billedet dækker hele området uden at blive strukket */
     z-index: 1; /* Lægger billedet i det bagerste lag, så teksten kan placeres ovenpå */
 }
 
+/* Tekstcontaineren i hero-sektionen */
+.hero-content {
+    position:absolute; /* Låser teksten fast i forhold til hero-sektionens container */
+    top:30%; /* Placerer teksten vertikalt i midten af hero-sektionen */
+    left:10%; /*Skubber container ind fra venstre side/*
+    transform: translateY(-50%); /*Centrer vertikalt*/
+    z-index: 2;/* Lægger teksten i det forreste lag, så den vises ovenpå billedet */
+    max-width: 600px; /* Begrænser tekstcontainerens bredde for bedre læsbarhed */
+    color:#FFFFFF 
+}
+
+/* Den lille tekst over overskriften i hero-sektionen */
+.hero-content h5 {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    margin-left: -4px; /* Skubber den lille tekst lidt til venstre, så den er bedre justeret med overskriften */
+}
+
+/* Overskriften i hero-sektionen */
+.hero-content h1 {
+    font-family: 'Prata', serif;
+    font-size: 96px;
+    line-height: 1.0;
+    font-weight: 400;
+    margin-bottom: 24px; /* Giver ekstra luft til brødteksten*/
+}
+/* Brødteksten i hero-sektionen */
+.hero-content p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 40px; /* Giver ekstra luft under brødteksten for at adskille den fra CTA-knappen */
+}
 
 
 /* --Hero CTA (Call to Action) styling-- */
