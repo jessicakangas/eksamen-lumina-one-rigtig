@@ -86,5 +86,27 @@
     .navbar-links a:hover {
         color: var(--farve-icon); /* Skifter link-teksten til den mørke farve ved hover */
     }
+
+/* Navbar iconer*/
+
+.navbar-icons {
+    display: flex; /* Lægger ikoner vandret ved siden af hinanden */
+    gap: 24px; /* Justerer ikonerne vandret med lige mellemrum mellem dem */
+    align-items: center; /* Justerer ikonerne vertikalt i midten */
+}
+
+/* Styling for de enkelte ikoner i navbaren */
+.navbar-icons img {
+    width: 24px; /* Sætter bredden på ikonerne til 24px */
+    height: 24px; /* Sætter højden på ikonerne til 24px */
+    object-fit: contain; /* Sikrer at ikonerne ikke bliver strukket eller mast skæve */
+    cursor: pointer; /* Ændrer cursoren til en pointer for at indikere at ikonerne er klikbare */
+    transition: transform 0.3s ease; /* Gør ikonets hover-animation glidende og blød */
+}
+/* Visuel hover-effekt, hvor ikonet løfter 2 px */
+.navbar-icons img:hover {
+    transform: translateY(-2px);
+}
+
     
 
