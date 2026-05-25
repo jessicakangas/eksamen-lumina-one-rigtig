@@ -153,12 +153,12 @@
 /* Tekstcontaineren i hero-sektionen */
 .hero-content {
     position:absolute; /* Låser teksten fast i forhold til hero-sektionens container */
-    top:30%; /* Placerer teksten vertikalt i midten af hero-sektionen */
-    left:10%; /*Skubber container ind fra venstre side/*
-    transform: translateY(-50%); /*Centrer vertikalt*/
+    top:45%; /* Placerer teksten vertikalt i midten af hero-sektionen */
+    left:10%; /*Skubber container ind fra venstre side*/
+    transform: translateY(-50%); /*Centrerer vertikalt*/
     z-index: 2;/* Lægger teksten i det forreste lag, så den vises ovenpå billedet */
     max-width: 600px; /* Begrænser tekstcontainerens bredde for bedre læsbarhed */
-    color:#FFFFFF 
+    color:#FFFFFF; 
 }
 
 /* Den lille tekst over overskriften i hero-sektionen */
@@ -168,7 +168,7 @@
     letter-spacing: 4px;
     text-transform: uppercase;
     margin-bottom: 32px;
-    margin-left: -4px; /* Skubber den lille tekst lidt til venstre, så den er bedre justeret med overskriften */
+    margin-left: -4px; /* Skubber den lille tekst lidt til venstre, så den er bedre justeret med overskriften*/
 }
 
 /* Overskriften i hero-sektionen */
@@ -183,7 +183,7 @@
 .hero-content p {
     font-size: 14px;
     line-height: 1.5;
-    margin-bottom: 40px; /* Giver ekstra luft under brødteksten for at adskille den fra CTA-knappen */
+    margin-bottom: 48px; /* Giver ekstra luft under brødteksten for at adskille den fra CTA-knappen */
 }
 
 
