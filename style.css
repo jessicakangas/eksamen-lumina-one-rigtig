@@ -36,6 +36,7 @@
     }
 
  /* Grundlæggende indstillinger for hele websitet */
+
  body { 
     /* Anvender den lyse sandfarve som baggrund på hele siden */
     background-color: var(--farve-navbar-bg); 
@@ -52,4 +53,28 @@
     color: inherit;
  }
 
- 
+ /* Menu navigation styling */
+
+ .navbar-links {  
+    display: flex; /* Gør navbar-links til en fleksibel container for at arrangere linkene i en række */  
+    gap: 32; /* Justerer linkene vandret med lige mellemrum mellem dem */
+ }
+
+ /* De enkelte links inde i menuen */
+
+ .navbar-links a {
+    color: var(--farve-navbar-text);  /* Anvender den dæmpede brune farve til link-tekst */
+    font-size: 0.9em; /* Gør link-teksten lidt mindre end standard for at skabe en subtil effekt */
+    font-weight: 500; /*Giver teksten en flot mellemfyldig vægt*/
+    letter-spacing: 1px; /*Giver lidt luft mellem bogstaverne for at forbedre læsbarheden */
+    text-transform: uppercase;  /* Gør link-teksten til store bogstaver */
+    transition: color 0.3s ease; /* Tilføjer en glidende overgangseffekt, når farven ændres ved hover */
+ }
+
+ /* Hover-effekt for menu-links */
+
+    .navbar-links a:hover {
+        color: var(--farve-icon); /* Skifter link-teksten til den mørke farve ved hover */
+    }
+    
+
