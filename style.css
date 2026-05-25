@@ -57,7 +57,17 @@
 
  .navbar-links {  
     display: flex; /* Gør navbar-links til en fleksibel container for at arrangere linkene i en række */  
-    gap: 32; /* Justerer linkene vandret med lige mellemrum mellem dem */
+    gap: 32px; /* Justerer linkene vandret med lige mellemrum mellem dem */
+ }
+
+ /* Header og navbar styling */
+
+ .top-header {
+    display: flex; /* Aktiverer Flexbox, så elementerne lægger sig vandret */
+    justify-content: space-between; /* Placerer logoet og navigationen i hver sin ende af headeren */
+    align-items: center; /* Justerer logoet og navigationen vertikalt i midten */
+    padding: 20px 40px; /* Giver 20px luft i top/bund og 40px luft i siderne */
+    background-color: var(--farve-navbar-bg); /* Anvender den lyse sandfarve som baggrund for headeren */
  }
 
  /* De enkelte links inde i menuen */
