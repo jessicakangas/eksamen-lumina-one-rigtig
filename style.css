@@ -151,5 +151,28 @@
 }
 
 
-    
+
+/* --Hero CTA (Call to Action) styling-- */
+
+/*CTA-knappen i hero-sektionen */
+.cta-button {
+    display: inline-block; /* Gør det muligt at give et link padding (luft) og bredde/højde */
+    background-color: var(--farve-cta-bg); /* Henter den hvide baggrundsfarve variablerne */
+    color: var(--farve-icon); /* Henter den mørke farve til tekst fra variablerne */
+    padding: 16px 36px; /*Giver 16px luft i top/bund og 36px i siderne */
+    font-size: 10px; /* Sætter tekststørrelsen til standard */
+    font-weight: 700; /*Gør at teksten er bold*/
+    letter-spacing: 2px; /*Giver lidt luft mellem bogstaverne for at forbedre læsbarheden */
+    text-transform: uppercase; /* Gør teksten til store bogstaver */
+    border-radius: 100px; /* Giver knappen en rundet form */
+    transition: all 0.3s ease; /* Sørger for, at knappen reagerer med en blød animation ved hover */;
+
+}
+/* Hover-effekt for CTA-knappen */
+.cta-button:hover {
+    background-color: var(--farve-icon); /* Skifter baggrundsfarven til den mørke farve ved hover */
+    color: var(--farve-cta-bg); /* Skifter tekstfarven til den hvide farve ved hover */
+    transform: scale(1.05); /* Gør knappen lidt større ved hover for at skabe en interaktiv effekt */
+    box-shadow: 0 10px 20px rgba (0,0,0,0.15); /* Blød skyggeeffekt ved hover, der visuelt løfter knappen fra baggrunden */
+}    
 
