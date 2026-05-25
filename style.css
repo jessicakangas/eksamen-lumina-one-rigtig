@@ -5,6 +5,8 @@
 
  /* Definerer CSS-variabler for farver, der bruges i hele designet */
 
+
+ 
  /*Farver til herosection og navbar*/
 
  :root {
@@ -25,6 +27,9 @@
     --farve-sage-green:#A3B899;
     --farve-lavender-mist: #EDE6FA;
  }
+
+
+
 
  /* Globale nulstillinger og skrifttyper */
 
@@ -51,7 +56,9 @@
     color: inherit; /* Anvender den dæmpede brune farve til link-tekst */
  }
 
- 
+
+
+
  /* Header og navbar styling */
 
  .top-header {
@@ -63,13 +70,20 @@
 
  }
 
+ /* Logo styling */
+ .logo-link img {
+    height: 60px; /* Sætter højdenpå logoet */
+    width: auto; /* Bevarer det oprindelige billedforhold for logoet */
+    object-fit: contain; /* Sikrer at logoet ikke bliver strukket eller mast skævt */
+ }
+
   /* Menu navigation styling */
 
  .navbar-links {  
     display: flex; /* Gør navbar-links til en fleksibel container for at arrangere linkene i en række */  
     gap: 32px; /* Justerer linkene vandret med lige mellemrum mellem dem */
  }
- 
+
  /* De enkelte links inde i menuen */
 
  .navbar-links a {
@@ -80,11 +94,16 @@
     text-transform: uppercase;  /* Gør link-teksten til store bogstaver */
     transition: color 0.3s ease; /* Tilføjer en glidende overgangseffekt, når farven ændres ved hover */
  }
+
  /* Hover-effekt for menu-links */
 
     .navbar-links a:hover {
         color: var(--farve-icon); /* Skifter link-teksten til den mørke farve ved hover */
     }
+
+
+
+
 /* Navbar iconer*/
 
 .navbar-icons {
@@ -101,6 +120,7 @@
     cursor: pointer; /* Ændrer cursoren til en pointer for at indikere at ikonerne er klikbare */
     transition: transform 0.3s ease; /* Gør ikonets hover-animation glidende og blød */
 }
+
 /* Visuel hover-effekt, hvor ikonet løfter 2 px */
 .navbar-icons img:hover {
     transform: translateY(-2px);
