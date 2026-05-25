@@ -6,7 +6,7 @@
  /* Definerer CSS-variabler for farver, der bruges i hele designet */
 
  /*Farver til herosection og navbar*/
- 
+
  :root {
     /* Den lyse sandfarve til menu-baggrunden */
     --farve-navbar-bg: #F7F3EE;
@@ -25,3 +25,31 @@
     --farve-sage-green:#A3B899;
     --farve-lavender-mist: #EDE6FA;
  }
+
+ /* Globale nulstillinger og skrifttyper */
+
+ /* Nulstiller browserens standard-margener og sikrer korrekt boks-størrelse */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+ /* Grundlæggende indstillinger for hele websitet */
+ body { 
+    /* Anvender den lyse sandfarve som baggrund på hele siden */
+    background-color: var(--farve-navbar-bg); 
+    /* Anvender Plus Jakarta Sans som primær skrifttype */
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+    /* Forbedrer tekstens udseende ved at aktivere antialiasing */
+    -webkit-font-smoothing: antialiased;
+ }   
+
+ a {
+    /* Fjerner understregning fra links */
+    text-decoration: none;
+    /* Anvender den dæmpede brune farve til link-tekst */
+    color: inherit;
+ }
+
+ 
