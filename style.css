@@ -126,5 +126,30 @@
     transform: translateY(-2px);
 }
 
+
+
+/* --Hero-sektion styling-- */
+
+/* Hoved container for hero-sektionen */
+
+#heroSection {
+    position: relative; /*Gør det muligt at placere teksten absolut oven på billedet
+    width: 100%; /* Gør hero-sektionen fuld bredde */
+    height: 100vh; /* Gør hero-sektionen høj nok til at fylde hele viewportens højde */
+    overflow: hidden; /* Sikre at indholdet ikke stikker uden for sektionen */
+}
+
+/* Baggrundsbilledet i hero-sektionen */
+.hero-image {
+    position:absolute; /*Låser billedet fast i baggrunden af containeren*/
+    top:0; /* Placerer billedet øverst i containeren */
+    left:0; /* Placerer billedet helt til venstre i containeren */
+    width:100%; /* Gør billedet fuld bredde */
+    height:100%; /* Gør billedet høj nok til at fylde hele containeren
+    object-fit: cover; /* Sikrer at billedet dækker hele området uden at blive strukket */
+    z-index: 1; /* Lægger billedet i det bagerste lag, så teksten kan placeres ovenpå */
+}
+
+
     
 
