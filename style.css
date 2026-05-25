@@ -47,19 +47,11 @@
  }   
 
  a {
-    /* Fjerner understregning fra links */
-    text-decoration: none;
-    /* Anvender den dæmpede brune farve til link-tekst */
-    color: inherit;
+    text-decoration: none; /* Fjerner understregning fra links */
+    color: inherit; /* Anvender den dæmpede brune farve til link-tekst */
  }
 
- /* Menu navigation styling */
-
- .navbar-links {  
-    display: flex; /* Gør navbar-links til en fleksibel container for at arrangere linkene i en række */  
-    gap: 32px; /* Justerer linkene vandret med lige mellemrum mellem dem */
- }
-
+ 
  /* Header og navbar styling */
 
  .top-header {
@@ -68,8 +60,16 @@
     align-items: center; /* Justerer logoet og navigationen vertikalt i midten */
     padding: 20px 40px; /* Giver 20px luft i top/bund og 40px luft i siderne */
     background-color: var(--farve-navbar-bg); /* Anvender den lyse sandfarve som baggrund for headeren */
+
  }
 
+  /* Menu navigation styling */
+
+ .navbar-links {  
+    display: flex; /* Gør navbar-links til en fleksibel container for at arrangere linkene i en række */  
+    gap: 32px; /* Justerer linkene vandret med lige mellemrum mellem dem */
+ }
+ 
  /* De enkelte links inde i menuen */
 
  .navbar-links a {
@@ -80,13 +80,11 @@
     text-transform: uppercase;  /* Gør link-teksten til store bogstaver */
     transition: color 0.3s ease; /* Tilføjer en glidende overgangseffekt, når farven ændres ved hover */
  }
-
  /* Hover-effekt for menu-links */
 
     .navbar-links a:hover {
         color: var(--farve-icon); /* Skifter link-teksten til den mørke farve ved hover */
     }
-
 /* Navbar iconer*/
 
 .navbar-icons {
