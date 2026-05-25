@@ -1,1 +1,27 @@
+/**
+ * file: style.css
+ * purpose: Styling for landingpage
+ **/
 
+ /* Definerer CSS-variabler for farver, der bruges i hele designet */
+
+ /*Farver til herosection og navbar*/
+ 
+ :root {
+    /* Den lyse sandfarve til menu-baggrunden */
+    --farve-navbar-bg: #F7F3EE;
+    /* Den dæmpede brune farve til menu-tekst */
+    --farve-navbar-text:#736C65;
+    /* Hvid tekst til hero-sektionen */
+    --farve-hero-text: #FFFFFF;
+    /* Den mørke farve til ikoner og CTA-tekst */
+    --farve-icon:#2B2927;
+    /* Den hvide baggrundsfarve til CTA-knappen */  
+    --farve-cta-bg: #FFFFFF;
+
+    /* Højtaler varianter farver */
+    --farve-moonlight-white: #EAE6DF;
+    --farve-dusty-rose: #DFB4A9;
+    --farve-sage-green:#A3B899;
+    --farve-lavender-mist: #EDE6FA;
+ }
