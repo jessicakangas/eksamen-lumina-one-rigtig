@@ -286,6 +286,11 @@
     background-color: var(--farve-lavender-mist);
 }
 
+/* Den aktive bjælke, som JavaScript aktiverer ved klik */
+.color-bar.active {
+    border: 2px solid var(--farve-icon);
+}
+
 /* TEKST OG PIL INDE I KNAPPERNE*/
 
 /* Containeren der holder h3 og p (Tvinger pilen helt ud til højre) */
