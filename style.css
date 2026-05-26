@@ -5,209 +5,184 @@
 
  /* Definerer CSS-variabler for farver, der bruges i hele designet */
 
-
  
- /*Farver til herosection og navbar*/
+/*GLOBALE DESIGNFARVER (VARIABLER)*/
 
  :root {
-    /* Den lyse sandfarve til menu-baggrunden */
     --farve-navbar-bg: #F7F3EE;
-    /* Den dæmpede brune farve til menu-tekst */
     --farve-navbar-text:#736C65;
-    /* Hvid tekst til hero-sektionen */
     --farve-hero-text: #FFFFFF;
-    /* Den mørke farve til ikoner og CTA-tekst */
-    --farve-icon:#2B2927;
-    /* Den hvide baggrundsfarve til CTA-knappen */  
+    --farve-icon:#2B2927; 
     --farve-cta-bg: #FFFFFF;
 
-    /* Højtaler varianter farver */
+/* Højtaler varianter */
     --farve-moonlight-white: #EAE6DF;
     --farve-dusty-rose: #DFB4A9;
     --farve-sage-green:#A3B899;
     --farve-lavender-mist: #EDE6FA;
  }
 
+/* NULSTILLING OG GRUNDLÆGGENDE FONTS TIL HELE LANDINGPAGE*/
 
-
-
- /*Globale nulstillinger og skrifttyper */
-
- /* Nulstiller browserens standard-margener og sikrer korrekt boks-størrelse */
     * {
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
+        box-sizing: border-box; /* Sikrer korrekt boks-størrelse */
     }
 
- /* Grundlæggende indstillinger for hele websitet */
-
  body { 
-    /* Anvender den lyse sandfarve som baggrund på hele siden */
-    background-color: var(--farve-navbar-bg); 
-    /* Anvender Plus Jakarta Sans som primær skrifttype */
-    font-family: 'Plus Jakarta Sans', sans-serif; 
-    /* Forbedrer tekstens udseende ved at aktivere antialiasing */
-    -webkit-font-smoothing: antialiased;
+    background-color: var(--farve-navbar-bg); /*Landingpage bg*/
+    font-family: 'Plus Jakarta Sans', sans-serif; /*Primær skrifttype*/
+    -webkit-font-smoothing: antialiased; 
  }   
 
  a {
-    text-decoration: none; /* Fjerner understregning fra links */
-    color: inherit; /* Anvender den dæmpede brune farve til link-tekst */
+    text-decoration: none;
+    color: inherit;
  }
 
 
+ /*HEADER OG NAVBAR STYLING*/
 
-
- /* Header og navbar styling */
-
+ /* Navbar*/
  .top-header {
-    display: flex; /* Aktiverer Flexbox, så elementerne lægger sig vandret */
-    justify-content: space-between; /* Placerer logoet og navigationen i hver sin ende af headeren */
-    align-items: center; /* Justerer logoet og navigationen vertikalt i midten */
-    padding: 20px 40px; /* Giver 20px luft i top/bund og 40px luft i siderne */
-    background-color: var(--farve-navbar-bg); /* Anvender den lyse sandfarve som baggrund for headeren */
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--farve-navbar-bg);
 
  }
 
- /* Logo styling */
+ /* Logo*/
  .logo-link img {
-    height: 60px; /* Sætter højdenpå logoet */
-    width: auto; /* Bevarer det oprindelige billedforhold for logoet */
-    object-fit: contain; /* Sikrer at logoet ikke bliver strukket eller mast skævt */
+    height: 60px;
+    width: auto;
+    object-fit: contain;
  }
 
-  /* Menu navigation styling */
-
+/* Menu navigation - links*/
  .navbar-links {  
-    display: flex; /* Gør navbar-links til en fleksibel container for at arrangere linkene i en række */  
-    gap: 32px; /* Justerer linkene vandret med lige mellemrum mellem dem */
+    display: flex; /* links i en horisontal (vandret) række*/
+    gap: 32px;
  }
 
  /* De enkelte links inde i menuen */
-
  .navbar-links a {
-    color: var(--farve-navbar-text);/* Anvender den dæmpede brune farve til link-tekst */
-    font-size: 0.9em; /* Gør link-teksten lidt mindre end standard for at skabe en subtil effekt */
-    font-weight: 500; /*Giver teksten en flot mellemfyldig vægt*/
-    letter-spacing: 1px; /*Giver lidt luft mellem bogstaverne for at forbedre læsbarheden */
-    text-transform: uppercase;/* Gør link-teksten til store bogstaver */
-    transition: color 0.3s ease; /* Tilføjer en glidende overgangseffekt, når farven ændres ved hover */
+    color: var(--farve-navbar-text);
+    font-size: 0.9em; 
+    font-weight: 500;
+    letter-spacing: 1px; 
+    text-transform: uppercase;/* Store bogstaver */
+    transition: color 0.3s ease; /* Glidende overgangseffekt, når farven ændres ved hover */
  }
 
- /* Hover-effekt for menu-links */
-
     .navbar-links a:hover {
-        color: var(--farve-icon); /* Skifter link-teksten til den mørke farve ved hover */
+        color: var(--farve-icon);
     }
 
-
-
-
-/* Navbar iconer*/
-
+/* Menu navigation ikoner*/
 .navbar-icons {
-    display: flex; /* Lægger ikoner vandret ved siden af hinanden */
-    gap: 24px; /* Justerer ikonerne vandret med lige mellemrum mellem dem */
-    align-items: center; /* Justerer ikonerne vertikalt i midten */
+    display: flex;
+    gap: 24px;
+    align-items: center;
 }
 
 /* Styling for de enkelte ikoner i navbaren */
 .navbar-icons img {
-    width: 24px; /* Sætter bredden på ikonerne til 24px */
-    height: 24px; /* Sætter højden på ikonerne til 24px */
+    width: 24px;
+    height: 24px;
     object-fit: contain; /* Sikrer at ikonerne ikke bliver strukket eller mast skæve */
-    cursor: pointer; /* Ændrer cursoren til en pointer for at indikere at ikonerne er klikbare */
-    transition: transform 0.3s ease; /* Gør ikonets hover-animation glidende og blød */
+    cursor: pointer; /* cursoren ændres til pointer så ikoner er klikbare */
+    transition: transform 0.3s ease;
 }
 
-/* Visuel hover-effekt, hvor ikonet løfter 2 px */
 .navbar-icons img:hover {
     transform: translateY(-2px);
     opacity: 0.7; /* Gør ikonet lidt gennemsigtigt ved hover */
 }
 
 
+/* HERO-SEKTION */
 
-/* --Hero-sektion styling-- */
-
-/* Hoved container for hero-sektionen */
+/* Hoved container for hero-sektionen - */
 #heroSection {
-    position: relative; /*Gør det muligt at placere teksten absolut oven på billedet*/
-    width: 100%; /* Gør hero-sektionen fuld bredde */
-    height: 100vh; /* Gør hero-sektionen høj nok til at fylde hele viewportens højde */
+    position: relative; /*Placere teksten oven på billedet*/
+    width: 100%;
+    height: 100vh;
     overflow: hidden; /* Sikre at indholdet ikke stikker uden for sektionen */
 }
 
-/* Baggrundsbilledet i hero-sektionen */
+/* Baggrundsbilledet*/
 .hero-image {
-    position:absolute; /*Låser billedet fast i baggrunden af containeren*/
-    top:0; /* Placerer billedet øverst i containeren */
-    left:0; /* Placerer billedet helt til venstre i containeren */
-    width:100%; /* Gør billedet fuld bredde */
-    height:100%; /* Gør billedet høj nok til at fylde hele containeren*/
-    object-fit: cover; /* Sikrer at billedet dækker hele området uden at blive strukket */
-    z-index: 1; /* Lægger billedet i det bagerste lag, så teksten kan placeres ovenpå */
+    position:absolute; /*Låser billedet fast */
+    top:0; 
+    left:0;
+    width:100%; 
+    height:100%;
+    object-fit: cover; /*bg billede dækker hele området uden at blive strukket */
+    z-index: 1; /* bg billede i bagerste lag, så teksten placeres ovenpå */
 }
 
-/* Tekstcontaineren i hero-sektionen */
+/* Tekstindhold og placering */
 .hero-content {
-    position:absolute; /* Låser teksten fast i forhold til hero-sektionens container */
-    top:45%; /* Placerer teksten vertikalt i midten af hero-sektionen */
-    left:10%; /*Skubber container ind fra venstre side*/
-    transform: translateY(-50%); /*Centrerer vertikalt*/
-    z-index: 2;/* Lægger teksten i det forreste lag, så den vises ovenpå billedet */
-    max-width: 600px; /* Begrænser tekstcontainerens bredde for bedre læsbarhed */
+    position:absolute;
+    top:45%; 
+    left:10%;
+    transform: translateY(-50%); /*Centrerer teksten vertikalt*/
+    z-index: 2;/* Teksten i forreste lag, ovenpå bg billede */
+    max-width: 600px;
     color:#FFFFFF; 
 }
 
-/* Den lille tekst over overskriften i hero-sektionen */
+/* Lille overskrift */
 .hero-content h5 {
     font-size: 10px;
     font-weight: 600;
     letter-spacing: 4px;
     text-transform: uppercase;
     margin-bottom: 32px;
-    margin-left: -4px; /* Skubber den lille tekst lidt til venstre, så den er bedre justeret med overskriften*/
+    margin-left: -4px; /* Skubber lille tekst lidt til venstre, så den er justeret med overskriften*/
 }
 
-/* Overskriften i hero-sektionen */
+/* Stor hovedoverskrift */
 .hero-content h1 {
     font-family: 'Prata', serif;
     font-size: 96px;
     line-height: 1.0;
     font-weight: 400;
-    margin-bottom: 24px; /* Giver ekstra luft til brødteksten*/
+    margin-bottom: 24px; /* Ekstra luft til brødteksten*/
 }
-/* Brødteksten i hero-sektionen */
+
+/* Brødteksten */
 .hero-content p {
     font-size: 14px;
     line-height: 1.5;
-    margin-bottom: 48px; /* Giver ekstra luft under brødteksten for at adskille den fra CTA-knappen */
+    margin-bottom: 48px; /* Ekstra luft under brødteksten til CTA-knappen */
 }
 
 
-/* --Hero CTA (Call to Action) styling-- */
+/* HERO CTA (CALL TO ACTION) */
 
-/*CTA-knappen i hero-sektionen */
+/*Selve knappen*/
 .cta-button {
     display: inline-block; /* Gør det muligt at give et link padding (luft) og bredde/højde */
-    background-color: var(--farve-cta-bg); /* Henter den hvide baggrundsfarve variablerne */
-    color: var(--farve-icon); /* Henter den mørke farve til tekst fra variablerne */
-    padding: 16px 36px; /*Giver 16px luft i top/bund og 36px i siderne */
-    font-size: 10px; /* Sætter tekststørrelsen til standard */
-    font-weight: 700; /*Gør at teksten er bold*/
-    letter-spacing: 2px; /*Giver lidt luft mellem bogstaverne for at forbedre læsbarheden */
-    text-transform: uppercase; /* Gør teksten til store bogstaver */
-    border-radius: 100px; /* Giver knappen en rundet form */
-    transition: all 0.3s ease; /* Sørger for, at knappen reagerer med en blød animation ved hover */;
-
+    background-color: var(--farve-cta-bg);
+    color: var(--farve-icon);
+    padding: 16px 36px; 
+    font-size: 10px;
+    font-weight: 700; /*Bold tekst*/
+    letter-spacing: 2px;
+    text-transform: uppercase; /* Store bogsatver */
+    transition: all 0.3s ease; /*Hover effekten lidt transperant*/
+    border-radius: 100px;
 }
-/* Hover-effekt for CTA-knappen */
+
+/* Hover-effekt på knappen */
 .cta-button:hover {
-    background-color: var(--farve-icon); /* Skifter baggrundsfarven til den mørke farve ved hover */
-    color: var(--farve-cta-bg); /* Skifter tekstfarven til den hvide farve ved hover */
-    transform: scale(1.05); /* Gør knappen lidt større ved hover for at skabe en interaktiv effekt */
-    box-shadow: 0 10px 20px rgba (0,0,0,0.15); /* Blød skyggeeffekt ved hover, der visuelt løfter knappen fra baggrunden */
+    background-color: var(--farve-icon);
+    color: var(--farve-cta-bg); /* Skifter tekstfarven til hvid ved hover */
+    transform: scale(1.05); /* Knappen bliver større for at skabe interaktiv effekt */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }    
 
