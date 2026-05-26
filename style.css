@@ -20,7 +20,13 @@
     --farve-dusty-rose: #DFB4A9;
     --farve-sage-green:#A3B899;
     --farve-lavender-mist: #EDE6FA;
+
+/*Knap-tilstande (Hover og baggrund)*/
+   --farve-knap-bg: #F9F9F9;
+   --farve-knap-hover: #F1F1F1;
+   --farve-knap-aktiv: #FFFFFF;
  }
+
 
 /* NULSTILLING OG GRUNDLÆGGENDE FONTS TIL HELE LANDINGPAGE*/
 
@@ -77,7 +83,7 @@
     transition: color 0.3s ease; /* Glidende overgangseffekt, når farven ændres ved hover */
  }
 
-    .navbar-links a:hover {
+.navbar-links a:hover {
         color: var(--farve-icon);
     }
 
@@ -184,5 +190,132 @@
     color: var(--farve-cta-bg); /* Skifter tekstfarven til hvid ved hover */
     transform: scale(1.05); /* Knappen bliver større for at skabe interaktiv effekt */
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-}    
+}
+
+
+/*LAYOUT FOR FARVEVÆLGER SEKTION*/
+#colorSection {
+    padding: 120px 80px;
+    background-color: #FFFFFF;
+}
+.color-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 80px;
+    align-items: center;
+}
+.color-left {
+    flex: 1;
+}
+/*Styler kun det billede/img (child), der ligger inde i kassen .image-wrapper(parrent)*/
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.color-right {
+    flex: 1;
+}
+.color-right h2 {
+    font-family: 'Prata', serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--farve-icon);
+    margin-bottom: 24px;
+}
+.color-intro {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--farve-navbar-text);
+    margin-bottom: 40px;
+}
+.color-selectors {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+/*FARVE-KNAPPER OG CIRKLER*/
+
+/*Selve bjælken for hver farve-knap (henter farverne fra defineret variabler*/
+.color-bar {
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: var(--farve-knap-bg); /* Standard bg color */
+    border: 1px solid transparent; /* Låser layoutet så det ikke rykker sig ved hover/active*/
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Hover-effekt når man fører musen over en knap */ 
+.color-bar:hover {
+    background-color:var(--farve-knap-hover)
+}
+
+/* Den aktive knap får en mørk ramme og hvid baggrund*/
+.color-bar.active {
+    background-color: var(--farve-knap-aktiv); 
+    border-color: var(--farve-icon);
+}
+
+/*Farve-dots*/
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Gør den helt rund */
+    margin-right: 20px;
+    flex-shrink: 0; /* SÅ cirklen ikke bliver trykket flad */
+}
+
+/* Specifikke farver til hver enkelt cirkel */
+.white-dot{
+    background-color: var(--farve-moonlight-white);
+    border: 1px solid var(--farve-navbar-text); 
+}
+.rose-dot{
+    background-color: var(--farve-dusty-rose);
+}
+.green-dot {
+    background-color: var(--farve-sage-green);
+}
+.lavender-dot {
+    background-color: var(--farve-lavender-mist);
+}
+
+/* TEKST OG PIL INDE I KNAPPERNE*/
+
+/* Containeren der holder h3 og p (Tvinger pilen helt ud til højre) */
+.bar-text {
+    flex-grow: 1; 
+}
+/* Navnet på farven indeni knappen */
+.bar-text h3 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0 0 4px 0; /* Giver 4px luft ned til den korte beskrivelse */
+    color: var(--farve-icon);
+}
+/* Den korte beskrivelse under farvenavnet */
+.bar-text p {
+    font-size: 13px;
+    margin: 0;
+    color: var(--farve-navbar-text);
+}
+/* Den lille pil (>) helt ude i højre side */
+.arrow {
+    font-size: 16px;
+    color: var(--farve-navbar-text);
+    font-weight: 500;
+    transition: transform 0.3s ease; /* Gør animationen glidende */
+}
+
+.color-bar:hover .arrow {
+    transform: translateX(4px); /*Pilen glider 4px mod højre ved hover på bjælken*/
+} 
 
