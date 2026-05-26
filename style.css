@@ -314,8 +314,53 @@
     font-weight: 500;
     transition: transform 0.3s ease; /* Gør animationen glidende */
 }
-
 .color-bar:hover .arrow {
     transform: translateX(4px); /*Pilen glider 4px mod højre ved hover på bjælken*/
 } 
 
+/*CTA OG LEVERINGSINFO*/
+
+/* Containeren der holder knap og leveringstekst på samme linje */
+.color-cta-group {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+/*Den mørke "KØB NU" knap*/
+.color-buy-button {
+    display: inline-block;
+    background-color: var(--farve-icon);
+    color: #FFFFFF;
+    padding: 16px 40px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 100px;
+    transition: all 0.3s ease;
+}
+
+/*Hover-effekt på "KØB NU" knappen*/
+.color-buy-button:hover {
+    transform: scale(1.03); /* Gør knappen en lidt større */
+    box-shadow: 0 8px 16px rgb(0,0,0,0.1);
+    opacity: 0.9;
+}
+
+/*Leveringsteksten*/
+.shipping-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--farve-navbar-text);
+}
+
+/*Shipping-ikon*/
+.shipping-info img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain; /* Så ikomnet bevarer sine rigtige proportioner uden at blive mast eller strakt*/
+}
