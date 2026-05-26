@@ -363,9 +363,106 @@
     color: var(--farve-navbar-text);
 }
 
-/*Shipping-ikon*/
+/*Shipping-icon*/
 .shipping-info img {
     width: 16px;
     height: 16px;
     object-fit: contain; /* Så ikomnet bevarer sine rigtige proportioner uden at blive mast eller strakt*/
 }
+
+
+/*COLLAGE SECTION*/
+
+/*Sektionens bg farve og padding i top/bund og sider*/
+#collageSection {
+    padding: 80px 40px;
+    background-color:var(--farve-navbar-bg);
+    text-align: center;
+}
+
+/*Let the memories flow overskrift*/
+.collage-header h2 {
+    font-family: 'Prata', serif;
+    font-size: 42px;
+    color: var(--farve-icon);
+    margin-bottom: 20px;
+}
+
+/*Brødtekst og @LuminaOne profilnavn*/
+.collage-header p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 170%;
+    color: var(--farve-icon);
+    max-width: 600px;
+    margin: 0 auto 50px auto; /* Centrerer teksten og spacing til billederne */
+}
+
+/*Asymmetrisk layout på billederne*/
+.collage-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto; 
+}
+
+/*Rammen om billederne*/
+.collage-item {
+   position:relative; /*Låser metadata-footeren fast inde i billedrammen*/
+   overflow: hidden;
+   border-radius: 20px;
+   cursor: pointer;
+}
+
+/* Tvinger det første objekt (picnic) til at fylde over to rækker (Asymmetri)*/
+.collage-item.large {
+    grid-row: span 2;
+}
+
+.collage-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Beskærer billedet harmonisk i forhold til boksens størrelse */
+    display: block;
+}
+
+/* Hover-overlay på billederne (Likes og kommentarer) */
+.collage-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex; /*Centrerer heart/comment-ikoner*/
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Visning af social data - Ikon og tal */
+.overlay-stat {
+    display: flex; /*ikon+tal på horisontal linje*/
+    align-items: center;
+    gap: 8px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    color: var(--farve-icon);
+}
+
+/* Ikon+ tal størrelse*/
+.stat-icon {
+    width: 20px;
+    height: auto;
+}
+
+/* Gør overlayet med likes og kommentarer synligt ved hover */
+.collage-item:hover .collage-overlay {
+    opacity: 1;
+}
+
