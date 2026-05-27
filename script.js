@@ -1,33 +1,30 @@
 
-//FIND DIN PERSONLIGE FARVE SEKTION
+//Find din personlige farve sektion
 
 /*Henter de fire farve containere og billedet af højtaleren */
 
 const colorBars = document.querySelectorAll ('.color-bar');
 const mainProductImg = document.querySelector ('#speakerImage');
+const colorDescriptionText = document.querySelector('#colorDescription');
 
 
 colorBars.forEach(bar => {
     bar.addEventListener('click', () => {
-
-        /* Fjerner den mørke ramme (.active) fra alle de andre containere */
-        colorBars.forEach(b => b.classList.remove('active'));
-
-        /* Mørk ramme ved klik på container*/
-        bar.classList.add('active');
-
-        /* Henter billedstien fra data-color-attributten ved klik */
+        colorBars.forEach(b => b.classList.remove('active')); /* Fjerner mørk ramme fra de andre containere */
+        bar.classList.add('active'); /* Mørk ramme ved klik på container*/
         const newImgSrc = bar.getAttribute('data-color');
-        
-        /* Skifter det store (første) billede ud til nyt billede */
         if (newImgSrc) {
             mainProductImg.src = newImgSrc;
+        }
+        const newText = bar.getAttribute('data-text');
+        if (newText && colorDescriptionText) {
+            colorDescriptionText.textContent = newText;
         }
     });
 });
 
 
-//FIND DIN FARVE SEKTION (produktspecifikationer)
+//Produkt specifikationer
 
 // Finder alle knapperne, der kan klikkes på
 const specToggles = document.querySelectorAll('.spec-toggle');
@@ -44,7 +41,6 @@ specToggles.forEach(toggle => {
             item.querySelector('.spec-panel').style.maxHeight = null;
         });
         
-        // Hvis den klikkede ikke var aktiv før, er den nu
         if (!isActive) {
             currentItem.classList.add('active');
     
@@ -53,3 +49,22 @@ specToggles.forEach(toggle => {
         }
     });
 });
+
+
+// Scrolle effekt ---
+
+const reviewBtn = document.getElementById('reviewScrollBtn');
+const reviewContainer = document.querySelector('.reviews-cards'); 
+
+if (reviewBtn && reviewContainer) {
+    reviewBtn.addEventListener('click', () => {
+        console.log("Der blev klikket på pilen!"); 
+        
+        reviewContainer.scrollBy({
+            left: 344,
+            behavior: 'smooth'
+        });
+    });
+} else {
+    console.log("Fejl: Kunne ikke finde reviewBtn eller reviewContainer i HTML'en!");
+}

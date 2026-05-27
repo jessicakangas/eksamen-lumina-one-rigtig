@@ -682,6 +682,165 @@
 
 
 
+/* ANMELDELSER SEKTION */
+
+/* Hovedcontainer for anmeldelser */
+.reviews-section {
+    width: 100%;
+    padding: 100px 0;
+    background-color: var(--farve-navbar-bg);
+}
+
+/* Sektionens intro-tekst og overskrift*/
+.reviews-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Stor hovedoverskrift (+1.000 glade kunder)*/
+.reviews-header h2 {
+    font-family: 'Prata', serif;
+    font-size: 42px;
+    color: var(--farve-icon);
+    margin-bottom: 12px;
+}
+
+/* Introduktions-brødtekst*/
+.reviews-header p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    color: var(--farve-navbar-text);
+}
+
+/* Lille sektions-overskrift i toppen */
+.reviews-header h5 {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--farve-navbar-text);
+    margin-bottom: 12px;
+}
+
+.review-subtitle {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--farve-icon);
+    letter-spacing: 0.5px;
+}
+
+.reviews-cards {
+    display: flex;
+    gap: 24px;
+    padding: 20px 40px; 
+    overflow-x: auto; 
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.review-card {
+    flex-shrink: 0;
+    width: 320px;
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 20px; 
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    gap: 12px;
+}
+
+.review-stars {
+    width: 220px;
+    height: auto;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+/* Teksten i containeren */
+.review-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555555;
+    margin-bottom: 24px;
+}
+
+/* Navnet*/
+.review-author {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--farve-navbar-text);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.reviews-arrow-container {
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+.reviews-scroll-arrow {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.reviews-scroll-arrow:hover {
+    transform: translateX(4px);
+}
+
+/* Trustpilot container i bunden */
+.trustpilot-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #EAE6DF; 
+    border-radius: 20px; 
+    padding: 24px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trustpilot-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.trustpilot-star {
+    color: #00b67a;
+    font-size: 20px;
+}
+
+.trustpilot-brand {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #2b2927;
+}
+
+.trustpilot-score {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    color: #555555;
+}
+
+.trustpilot-score span {
+    color: #00b67a;
+    font-weight: 700;
+}
+
+.trustpilot-right {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 13px;
+    color: var(--farve-navbar-text);
+}
+
+
 
 
 
