@@ -629,7 +629,7 @@
     transition: transform 0.2s ease;
 } 
 
-/* Udforsk-knap placeret centreret i bunden under hele sektionen */
+/* UDFORSK NU knap placeret centreret i bunden under hele sektionen */
 .details-button-container {
     text-align: center;
     margin-top: 60px;
@@ -645,6 +645,12 @@
     font-weight: 600;
     letter-spacing: 1px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.explore-btn:hover {
+    background-color: var(--farve-navbar-text);
+    transform: translateY(-2px); 
 }
 
 
