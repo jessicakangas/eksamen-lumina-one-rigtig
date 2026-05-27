@@ -1,4 +1,5 @@
-/*COLORSELECTOR - INTERAKTIVITET*/
+
+//FIND DIN PERSONLIGE FARVE SEKTION
 
 /*Henter de fire farve containere og billedet af højtaleren */
 
@@ -25,3 +26,30 @@ colorBars.forEach(bar => {
     });
 });
 
+
+//FIND DIN FARVE SEKTION (produktspecifikationer)
+
+// Finder alle knapperne, der kan klikkes på
+const specToggles = document.querySelectorAll('.spec-toggle');
+
+specToggles.forEach(toggle => {
+    toggle.addEventListener('click', function() {
+       
+        const currentItem = this.parentElement;
+        const isActive = currentItem.classList.contains('active');
+        
+        // Lukker alle paneler først (så kun én er åben ad gangen)
+        document.querySelectorAll('.spec-item').forEach(item => {
+            item.classList.remove('active');
+            item.querySelector('.spec-panel').style.maxHeight = null;
+        });
+        
+        // Hvis den klikkede ikke var aktiv før, er den nu
+        if (!isActive) {
+            currentItem.classList.add('active');
+    
+            const panel = currentItem.querySelector('.spec-panel');
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    });
+});

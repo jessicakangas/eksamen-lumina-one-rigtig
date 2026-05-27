@@ -80,7 +80,7 @@
     font-weight: 500;
     letter-spacing: 1px; 
     text-transform: uppercase;/* Store bogstaver */
-    transition: color 0.3s ease; /* Glidende overgangseffekt, når farven ændres ved hover */
+    transition: color 0.3s ease;
  }
 
 .navbar-links a:hover {
@@ -99,13 +99,13 @@
     width: 24px;
     height: 24px;
     object-fit: contain; /* Sikrer at ikonerne ikke bliver strukket eller mast skæve */
-    cursor: pointer; /* cursoren ændres til pointer så ikoner er klikbare */
+    cursor: pointer; /* cursoren ændres til pointer */
     transition: transform 0.3s ease;
 }
 
 .navbar-icons img:hover {
     transform: translateY(-2px);
-    opacity: 0.7; /* Gør ikonet lidt gennemsigtigt ved hover */
+    opacity: 0.7;
 }
 
 
@@ -136,12 +136,12 @@
     top:45%; 
     left:10%;
     transform: translateY(-50%); /*Centrerer teksten vertikalt*/
-    z-index: 2;/* Teksten i forreste lag, ovenpå bg billede */
+    z-index: 2; /* Teksten i forreste lag, ovenpå bg billede */
     max-width: 600px;
     color:#FFFFFF; 
 }
 
-/* Lille overskrift */
+/* Lille overskrift (H5)*/
 .hero-content h5 {
     font-size: 10px;
     font-weight: 600;
@@ -151,28 +151,27 @@
     margin-left: -4px; /* Skubber lille tekst lidt til venstre, så den er justeret med overskriften*/
 }
 
-/* Stor hovedoverskrift */
+/* Stor hovedoverskrift (H1)*/
 .hero-content h1 {
     font-family: 'Prata', serif;
     font-size: 96px;
     line-height: 1.0;
     font-weight: 400;
-    margin-bottom: 24px; /* Ekstra luft til brødteksten*/
+    margin-bottom: 24px;
 }
 
 /* Brødteksten */
 .hero-content p {
     font-size: 14px;
     line-height: 1.5;
-    margin-bottom: 48px; /* Ekstra luft under brødteksten til CTA-knappen */
+    margin-bottom: 48px;
 }
 
 
-/* HERO CTA (CALL TO ACTION) */
+/* HERO CTA */
 
-/*Selve knappen*/
 .cta-button {
-    display: inline-block; /* Gør det muligt at give et link padding (luft) og bredde/højde */
+    display: inline-block; /* Giver link padding og bredde/højde */
     background-color: var(--farve-cta-bg);
     color: var(--farve-icon);
     padding: 16px 36px; 
@@ -180,20 +179,21 @@
     font-weight: 700; /*Bold tekst*/
     letter-spacing: 2px;
     text-transform: uppercase; /* Store bogsatver */
-    transition: all 0.3s ease; /*Hover effekten lidt transperant*/
+    transition: all 0.3s ease;
     border-radius: 100px;
 }
 
 /* Hover-effekt på knappen */
 .cta-button:hover {
     background-color: var(--farve-icon);
-    color: var(--farve-cta-bg); /* Skifter tekstfarven til hvid ved hover */
-    transform: scale(1.05); /* Knappen bliver større for at skabe interaktiv effekt */
+    color: var(--farve-cta-bg);
+    transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
 
-/*LAYOUT FOR FARVEVÆLGER SEKTION*/
+/*FIND DIN PERSONLIGE FARVE SEKTION*/
+
 #colorSection {
     padding: 120px 80px;
     background-color: #FFFFFF;
@@ -239,12 +239,12 @@
 
 /*FARVE-KNAPPER OG CIRKLER*/
 
-/*Selve bjælken for hver farve-knap (henter farverne fra defineret variabler*/
+/*Container for hver farve-knap*/
 .color-bar {
     display: flex;
     align-items: center;
     padding: 16px 24px;
-    background-color: var(--farve-knap-bg); /* Standard bg color */
+    background-color: var(--farve-knap-bg);
     border: 1px solid transparent; /* Låser layoutet så det ikke rykker sig ved hover/active*/
     border-radius: 8px;
     cursor: pointer;
@@ -291,11 +291,12 @@
     border: 2px solid var(--farve-icon);
 }
 
-/* TEKST OG PIL INDE I KNAPPERNE*/
+
 
 /* Containeren der holder h3 og p (Tvinger pilen helt ud til højre) */
 .bar-text {
     flex-grow: 1; 
+
 }
 /* Navnet på farven indeni knappen */
 .bar-text h3 {
@@ -312,7 +313,7 @@
     margin: 0;
     color: var(--farve-navbar-text);
 }
-/* Den lille pil (>) helt ude i højre side */
+
 .arrow {
     font-size: 16px;
     color: var(--farve-navbar-text);
@@ -323,7 +324,7 @@
     transform: translateX(4px); /*Pilen glider 4px mod højre ved hover på bjælken*/
 } 
 
-/*CTA OG LEVERINGSINFO*/
+/*CTA og leveringsinfo*/
 
 /* Containeren der holder knap og leveringstekst på samme linje */
 .color-cta-group {
@@ -471,7 +472,6 @@
 .collage-item:hover .collage-overlay {
     opacity: 1;
 }
-
 
 
 /* --- PRODUKT SPECIFIKATIONER SEKTION --- */
@@ -652,7 +652,6 @@
     background-color: var(--farve-navbar-text);
     transform: translateY(-2px); 
 }
-
 
 
 
