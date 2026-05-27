@@ -655,4 +655,33 @@
 
 
 
+/* VIDEO SEKTION */
+.video-section {
+    width: 100%;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container {
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.beach-video {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
   
