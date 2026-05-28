@@ -35,7 +35,7 @@
 <main>
 
 <!-- Hero-sektionen -->    
-  <section id="heroSection">
+  <header id="heroSection">
     <picture class="hero-background">
       <img src="img/background-hero.png" alt="Lumina One højtaler i nordisk natur" class="hero-image"> 
     </picture>
@@ -48,7 +48,7 @@
       </p>
       <a href="#kollektion" class="cta-button">UDFORSK KOLLEKTIONEN</a>
     </section>
-  </section>
+  </header>
 
 
 <!--Find din personlige farve sektion-->
@@ -57,15 +57,15 @@
 
         
 <!-- Venstre side: Billedvisning af højtaleren -->
-    <div class="color-left">
+    <section class="color-left">
         <div class="image-wrapper">
             <!-- Startbillede (Moonlight White) som udgangspunkt -->
             <img id="speakerImage" src="img/moonlight-white-1.png" alt="Lumi Højtaler - Moonlight White">
         </div>
-    </div>
+    </section>
 
 <!--Højre side: Indhold, farvevælgere og købsknap-->       
-    <div class="color-right">
+    <section class="color-right">
         <h2>Find din personlige farve</h2>
         <p class="color-intro">
         Vores fire dæmpede pastelfarver er nøje udvalgt med afsæt i det milde, skandinaviske lys og elementer fra den vilde natur. Vælg den nuance, der passer perfekt til dit rum og temperament.   
@@ -73,47 +73,49 @@
 
                 
 <!-- De fire farve-knapper -->
-        <div class="color-selectors">
+        <section class="color-selectors">
                 
           <!-- Knap 1: Moonlight White (Aktiv som standard) -->
-          <div class="color-bar active" data-color="img/moonlight-white-1.png" data-text="Minimalistisk, tidløs og uendelig ren (Moonlight-white). Fanger sollyset elegant og flyder i absolut perfekt ét med det moderne lyse nordiske hjem.">
+          <section class="color-bar active" data-color="img/moonlight-white-1.png" data-text="Minimalistisk, tidløs og uendelig ren (Moonlight-white). Fanger sollyset elegant og flyder i absolut perfekt ét med det moderne lyse nordiske hjem.">
             <span class="dot white-dot"></span>
-            <div class="bar-text">
+
+            <section class="bar-text">
               <h3>MOONLIGHT WHITE</h3>
               <p>Klassisk, lys og ultra-minimalistisk</p>
-            </div>
+            </section>
+
             <span class="arrow">&gt;</span>
-          </div> 
+          </section> 
 
           <!--Knap 2: Dusty-rose-->
-            <div class="color-bar" data-color="img/dusty-rose-2.png" data-text="En varm, dæmpet rosa tone (Dusty-rose), inspireret af solnedgange over klitterne. Giver rummet kant og en organisk, indbydende glød.">
+            <section class="color-bar" data-color="img/dusty-rose-2.png" data-text="En varm, dæmpet rosa tone (Dusty-rose), inspireret af solnedgange over klitterne. Giver rummet kant og en organisk, indbydende glød.">
                 <span class="dot rose-dot"></span>
-                <div class="bar-text">
+                <section class="bar-text">
                  <h3>DUSTY ROSE</h3>
                  <p>Varm, blød og organisk elegance</p>
-            </div>
+                </section>
             <span class="arrow">&gt;</span>
-          </div> 
+          </section> 
 
         <!--Knap 3: Sage-green-->
-            <div class="color-bar" data-color="img/sage-green-3.png" data-text="En beroligende, støvet grøn (Sage-green), der trækker den dybe, nordiske skov helt tæt på. Skaber en stemning af balance, ro og frisk luft..">
+            <section class="color-bar" data-color="img/sage-green-3.png" data-text="En beroligende, støvet grøn (Sage-green), der trækker den dybe, nordiske skov helt tæt på. Skaber en stemning af balance, ro og frisk luft..">
                 <span class="dot green-dot"></span>
-                <div class="bar-text">
-                 <h3>SAGE GREEN</h3>
-                 <p>Afdæmpet, rolig og inspireret af naturen</p>
-            </div>
+                <section class="bar-text">
+                <h3>SAGE GREEN</h3>
+                <p>Afdæmpet, rolig og inspireret af naturen</p>
+                </section>
             <span class="arrow">&gt;</span>
-          </div>
+          </section>
           
         <!--Knap 4: Lavender-mist-->
-            <div class="color-bar" data-color="img/lavender-mist-4.png" data-text="En sofistikeret, ultra-let violet nuance (Lavender-mist), der minder om kølig morgentåge. Moderne, legesyg og subtil på samme tid.">
+            <section class="color-bar" data-color="img/lavender-mist-4.png" data-text="En sofistikeret, ultra-let violet nuance (Lavender-mist), der minder om kølig morgentåge. Moderne, legesyg og subtil på samme tid.">
                 <span class="dot lavender-dot"></span>
                 <div class="bar-text">
                  <h3>LAVENDER-MIST</h3>
                  <p>Subtil, kølig og magisk undertone</p>
             </div>
             <span class="arrow">&gt;</span>
-          </div>
+          </section>
 
           <p id="colorDescription" class="color-dynamic-text">Minimalistisk, tidløs og uendelig ren (Moonlight-white). Fanger sollyset elegant og flyder i absolut perfekt ét med det moderne lyse nordiske hjem.</p>
         
@@ -127,9 +129,9 @@
         </div>
 
           
-        </div> <!-- Lukker .color-selectors -->
+        </section> <!-- Lukker .color-selectors -->
 
-      </div> <!-- Lukker .color-right -->
+      </section> <!-- Lukker .color-right -->
       
     </div> <!-- Lukker .color-container -->
   </section> <!-- Lukker #colorSection -->
@@ -303,18 +305,18 @@
 
 
 <!--VIDEO-->
-<section class="video-section">
+<aside class="video-section">
     <div class="video-container">
         <video src="img/video.mov" autoplay loop muted playsinline class="beach-video"></video>
     </div>
-</section>
+</aside>
 
 
 <!--ANMELDELSER SEKTION-->
 <section class="reviews-section">
  
     <div class="reviews-header">
-        <h5>Anmeldelser</h5>
+        <h3>Anmeldelser</h3>
         <h2>+1.000 glade kunder</h2>
         <p>Se hvorfor vores kunder elsker Lumina One i hverdagen.</p>
     </div>
@@ -323,37 +325,37 @@
         
         <article class="review-card">
             <img src="img/stars.png" alt="5 stjerner" class="review-stars">
-            <h4 class="review-subtitle">BEDSTE HØJTALER NOGENSINDE</h4>
+            <h3 class="review-subtitle">BEDSTE HØJTALER NOGENSINDE</h3>
             <p class="review-text">"Jeg har haft min Lumina One i nogle måneder nu. Moonlight White-farven er så smuk og ren. Den pynter perfekt på hylden i stuen."</p>
-            <h5 class="review-author">- Jessica Kangas.</h5>
+            <h4 class="review-author">- Jessica Kangas.</h4>
         </article>
 
         <article class="review-card">
             <img src="img/stars.png" alt="5 stjerner" class="review-stars">
-            <h4 class="review-subtitle">VIRKLIG GOD LYD</h4>
+            <h3 class="review-subtitle">VIRKLIG GOD LYD</h3>
             <p class="review-text">"Købte min i Dusty Rose til mit soveværelse. Lyden er vildt klar, og den er utrolig nem at bruge."</p>
-            <h5 class="review-author">-Martin</h5>
+            <h4 class="review-author">-Martin</h4>
         </article>
 
         <article class="review-card">
             <img src="img/stars.png" alt="5 stjerner" class="review-stars">
-            <h4 class="review-subtitle">NEM AT HAVE MED PÅ FARTEN</h4>
+            <h3 class="review-subtitle">NEM AT HAVE MED PÅ FARTEN</h3>
             <p class="review-text">"Den bløde kernelæderhank gør den så nem a snuppe med ud i haven eller på stranden. Batteriet holder forevigt."</p>
-            <h5 class="review-author">- Murat.</h5>
+            <h4 class="review-author">- Murat.</h4>
         </article>
 
         <article class="review-card">
             <img src="img/stars.png" alt="5 stjerner" class="review-stars">
-            <h4 class="review-subtitle">GØR HVERDAGEN SMUKKERE</h4>
+            <h3 class="review-subtitle">GØR HVERDAGEN SMUKKERE</h3>
             <p class="review-text">"At have den stående ved siden af mine friske tulipaner i stuen... den er bare det perfekte accessory. Og lyden er virkelig god!"</p>
-            <h5 class="review-author">- Lars.</h5>
+            <h4 class="review-author">- Lars.</h4>
         </article>
 
          <article class="review-card">
             <img src="img/stars.png" alt="5 stjerner" class="review-stars">
-            <h4 class="review-subtitle">PERFEKT AT HAVE MED TIL FEST</h4>
+            <h3 class="review-subtitle">PERFEKT AT HAVE MED TIL FEST</h3>
             <p class="review-text">"Jeg har haft min Lumina One i nogle måneder nu. Moonlight White-farven er så smuk. Den pynter perfekt på hylden i stuen."</p>
-            <h5 class="review-author">- Julie.</h5>
+            <h4 class="review-author">- Julie.</h4>
         </article>
 
          <article class="review-card">
