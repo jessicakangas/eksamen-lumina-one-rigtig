@@ -68,3 +68,31 @@ if (reviewBtn && reviewContainer) {
 } else {
     console.log("Fejl: Kunne ikke finde reviewBtn eller reviewContainer i HTML'en!");
 }
+
+
+
+// --- FOOTER E-MAIL NYHEDSBREV FUNKTION ---
+
+const newsletterForm = document.getElementById('newsletterForm');
+const newsletterEmail = document.getElementById('newsletterEmail');
+const newsletterSuccess = document.getElementById('newsletterSuccess');
+
+if (newsletterForm && newsletterEmail && newsletterSuccess) {
+    newsletterForm.addEventListener('submit', (event) => {
+        // Stopper siden fra at genindlæse automatisk
+        event.preventDefault(); 
+        
+        const userEmail = newsletterEmail.value.trim();
+        
+        // Viser den fine succes-besked direkte under linjen
+        newsletterSuccess.textContent = `Tak! Vi har sendt din 10% rabatkode til: ${userEmail}`;
+        
+        // Tømmer feltet igen
+        newsletterEmail.value = '';
+        
+        // Fjerner beskeden igen efter 6 sekunder automatisk
+        setTimeout(() => {
+            newsletterSuccess.textContent = '';
+        }, 6000);
+    });
+}

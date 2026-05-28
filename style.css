@@ -372,16 +372,16 @@
 }
 
 
-/*COLLAGE SECTION*/
 
-/*Sektionens bg farve og padding i top/bund og sider*/
+
+/*LET THE MEMORIES FLOW SEKTION*/
+
 #collageSection {
     padding: 80px 40px;
-    background-color:var(--farve-navbar-bg);
+    background-color: var(--farve-navbar-bg);
     text-align: center;
 }
 
-/*Let the memories flow overskrift*/
 .collage-header h2 {
     font-family: 'Prata', serif;
     font-size: 42px;
@@ -389,7 +389,7 @@
     margin-bottom: 20px;
 }
 
-/*Brødtekst og @LuminaOne profilnavn*/
+/* Brødtekst og @LuminaOne profilnavn */
 .collage-header p {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 300;
@@ -397,28 +397,30 @@
     line-height: 170%;
     color: var(--farve-icon);
     max-width: 600px;
-    margin: 0 auto 50px auto; /* Centrerer teksten og spacing til billederne */
+    margin: 0 auto 50px auto;
 }
 
-/* Asymmetrisk layout på billederne (3 kolonner og 2 rækker ud fra Figma) */
+/*Collagen*/
+
+/* Asymmetrisk layout på billederne */
 .collage-grid {
     display: grid;
-    grid-template-columns: 1.2fr 1fr 1fr; /* 3 kolonner: Venstre er bredest */
-    grid-template-rows: auto auto; /* 2 rækker i højden */
+    grid-template-columns: 1.2fr 1fr 1fr; 
+    grid-template-rows: 250px 250px;
     gap: 24px;
     max-width: 1000px;
     margin: 0 auto; 
 }
 
-/* Rammen om billederne */
+/* Rammen om hvert enkelt billede */
 .collage-item {
-    position: relative; /* Låser metadata-footeren fast inde i billedrammen */
+    position: relative; 
     overflow: hidden;
     border-radius: 20px;
     cursor: pointer;
 }
 
-/* Tvinger det første objekt (picnic) til at fylde 2 rækker i højden i den første kolonne */
+/* Tvinger det første objekt (picnic) til at fylde 2 rækker i højden */
 .collage-item.large {
     grid-row: span 2;
 }
@@ -428,53 +430,88 @@
     grid-column: span 2;
 }
 
-/*Rammen om billederne*/
 .collage-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Beskærer billedet harmonisk i forhold til boksens størrelse */
+    object-fit: cover; 
     display: block;
 }
 
-/* Hover-overlay på billederne (Likes og kommentarer) */
+/* Det mørke, når man holder musen over billede */
 .collage-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.4);
-    display: flex; /*Centrerer heart/comment-ikoner*/
-    justify-content: center;
+    background-color: rgba(38, 37, 36, 0.85);
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
     align-items: center;
-    gap: 24px;
+    padding: 30px 24px;
+    box-sizing: border-box;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
-/* Visning af social data - Ikon og tal */
-.overlay-stat {
-    display: flex; /*ikon+tal på horisontal linje*/
-    align-items: center;
-    gap: 8px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 16px;
-    color: var(--farve-icon);
-}
-
-/* Ikon+ tal størrelse*/
-.stat-icon {
-    width: 20px;
-    height: auto;
-}
-
-/* Gør overlayet med likes og kommentarer synligt ved hover */
 .collage-item:hover .collage-overlay {
     opacity: 1;
 }
 
+/* Instagram-logo og navn */
+.user-profile {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
-/* --- PRODUKT SPECIFIKATIONER SEKTION --- */
+/* Selve teksten */
+.overlay-caption {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 160%;
+    color: #e0e0e0;
+    max-width: 240px;
+    margin: 0;
+    text-align: center;
+}
+
+/* Nederste række - vandret linje */
+.overlay-stats-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Ikon + tal samlet */
+.overlay-stat {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.collage-overlay img {
+    width: 18px !important;
+    height: 18px !important;
+    object-fit: contain !important;
+    display: inline-block !important;
+    filter: brightness(0) invert(1);
+}
+
+
+/*PRODUKT SPECIFIKATIONER SEKTION*/
 
 /*Hovedcontainer for hele sektionen*/
 #produktspecifikation {
@@ -526,7 +563,7 @@
 }
 
 
-/* --- Individuelle billede styling--- */
+/* Individuelle billede styling*/
 
 /* Top række: De to store billeder */
 .left-top {
@@ -565,9 +602,9 @@
     border-radius: 20px;
 }
 
+
 /*Højre side af containeren: Tekstindhold og harmonika effekt*/ 
 
-/* Overskrift og introduktion til specifikationslisten */
 .details-header h2 {
     font-family: 'Prata', serif;
     font-size: 42px;
@@ -623,13 +660,13 @@
     padding-bottom: 24px;
 }
 
-/* Det lille plus-tegn roterer og ændres til et kryds, når feltet er aktivt */
+/* Plus-tegn roterer og ændres til et kryds*/
 .spec-item.active .icon {
     transform: rotate(45deg);
     transition: transform 0.2s ease;
 } 
 
-/* UDFORSK NU knap placeret centreret i bunden under hele sektionen */
+/* "UDFORSK NU" knap placeret centreret i bunden under hele sektionen */
 .details-button-container {
     text-align: center;
     margin-top: 60px;
@@ -652,7 +689,6 @@
     background-color: var(--farve-navbar-text);
     transform: translateY(-2px); 
 }
-
 
 
 /* VIDEO SEKTION */
@@ -678,7 +714,6 @@
     object-fit: cover;
     transform: scale(1.05);
 }
-
 
 
 
@@ -839,6 +874,144 @@
     font-size: 13px;
     color: var(--farve-navbar-text);
 }
+
+
+
+
+/*FOOTER SEKTION */
+
+.main-footer {
+    background-color: #262524; 
+    color: #ffffff;
+    padding: 80px 60px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    border-top-left-radius: 40px; 
+    border-top-right-radius: 40px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-col {
+    flex: 1;
+}
+
+.footer-logo {
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin-bottom: 24px;
+}
+
+.footer-text {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #cccccc;
+    margin-bottom: 32px;
+    max-width: 300px;
+}
+
+.footer-payment img {
+    height: 20px;
+    width: auto;
+    opacity: 0.8;
+}
+
+/* Overskrifter for listerne */
+.footer-col h3 {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #8e8d8b;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+/* Liste-styling */
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 16px;
+}
+
+.footer-col ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 300;
+    transition: color 0.2s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #bfa38a;
+}
+
+/* Nyhedsbrev sektion */
+.footer-newsletter {
+    flex: 1.5;
+}
+
+.newsletter-intro {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #cccccc;
+    margin-bottom: 24px;
+}
+
+.newsletter-form {
+    max-width: 350px;
+}
+
+.input-group {
+    display: flex;
+    border-bottom: 1px solid #666666; /* Linjen under input */
+    padding-bottom: 8px;
+}
+
+.newsletter-form input {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 300;
+    width: 100%;
+    padding: 4px 0;
+}
+
+.newsletter-form input::placeholder {
+    color: #666666;
+}
+
+.newsletter-form input:focus {
+    outline: none;
+}
+
+/* Knappen med pilen */
+.newsletter-submit-btn {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0 4px;
+    transition: transform 0.2s ease;
+}
+
+.newsletter-submit-btn:hover {
+    transform: translateX(4px);
+}
+
 
 
 
