@@ -12,8 +12,6 @@
 </head>
 <body>
 
-
-<!-- Headeren -->
 <header class="top-header">
   <a href="#" class="logo-link">
     <img src="img/logo.png" alt="Lumi logo">
@@ -30,422 +28,371 @@
     <a href="#" aria-label="Søg"><img src="img/search-icon.png" alt="Søg"></a>
     <a href="#" aria-label="Kurv"><img src="img/cart-icon.png" alt="Kurv"></a>
   </div>
-</header>    
+</header>
 
+
+<!-- Main åbnes her, så strukturen passer med lukningen i bunden -->
 <main>
 
-<!-- Hero-sektionen -->    
-  <header id="heroSection">
-    <picture class="hero-background">
-      <img src="img/background-hero.png" alt="Lumina One højtaler i nordisk natur" class="hero-image"> 
-    </picture>
-    <section class="hero-content">
-      <h5>BÆRBAR LUKSUSLYD</h5>
-      <h1>Let the music flow</h1>
-      <p>
-        Lumina One forener rå, nordisk natur med krystalklar lyd. Skabt til 
-        at bevæge sig frit med dig gennem alle hverdagens smukkeste øjeblikke.
-      </p>
-      <a href="#kollektion" class="cta-button">UDFORSK KOLLEKTIONEN</a>
-    </section>
-  </header>
+<!--Hero-sektion-->
+
+<section id="heroSection">
+  <picture class="hero-background">
+    <img src="img/background-hero.png" alt="Lumina One højtaler i nordisk natur" class="hero-image"> 
+  </picture>
+  <div class="hero-content">
+    <p class="hero-sub">BÆRBAR LUKSUSLYD</p> 
+    <h1>Let the music flow</h1>
+    <p>
+      Lumina One forener rå, nordisk natur med krystalklar lyd. Skabt til 
+      at bevæge sig frit med dig gennem alle hverdagens smukkeste øjeblikke.
+    </p>
+    <a href="#kollektion" class="cta-button">UDFORSK KOLLEKTIONEN</a>
+  </div>
+</section>
 
 
-<!--Find din personlige farve sektion-->
+<!--Find din farve sektion-->
+
 <section id="colorSection">
-    <div class="color-container">
-
-        
-<!-- Venstre side: Billedvisning af højtaleren -->
-    <section class="color-left">
-        <div class="image-wrapper">
-            <!-- Startbillede (Moonlight White) som udgangspunkt -->
-            <img id="speakerImage" src="img/moonlight-white-1.png" alt="Lumi Højtaler - Moonlight White">
-        </div>
-    </section>
-
-<!--Højre side: Indhold, farvevælgere og købsknap-->       
-    <section class="color-right">
-        <h2>Find din personlige farve</h2>
-        <p class="color-intro">
-        Vores fire dæmpede pastelfarver er nøje udvalgt med afsæt i det milde, skandinaviske lys og elementer fra den vilde natur. Vælg den nuance, der passer perfekt til dit rum og temperament.   
-        </p>
-
-                
-<!-- De fire farve-knapper -->
-        <section class="color-selectors">
-                
-          <!-- Knap 1: Moonlight White (Aktiv som standard) -->
-          <section class="color-bar active" data-color="img/moonlight-white-1.png" data-text="Minimalistisk, tidløs og uendelig ren (Moonlight-white). Fanger sollyset elegant og flyder i absolut perfekt ét med det moderne lyse nordiske hjem.">
-            <span class="dot white-dot"></span>
-
-            <section class="bar-text">
-              <h3>MOONLIGHT WHITE</h3>
-              <p>Klassisk, lys og ultra-minimalistisk</p>
-            </section>
-
-            <span class="arrow">&gt;</span>
-          </section> 
-
-          <!--Knap 2: Dusty-rose-->
-            <section class="color-bar" data-color="img/dusty-rose-2.png" data-text="En varm, dæmpet rosa tone (Dusty-rose), inspireret af solnedgange over klitterne. Giver rummet kant og en organisk, indbydende glød.">
-                <span class="dot rose-dot"></span>
-                <section class="bar-text">
-                 <h3>DUSTY ROSE</h3>
-                 <p>Varm, blød og organisk elegance</p>
-                </section>
-            <span class="arrow">&gt;</span>
-          </section> 
-
-        <!--Knap 3: Sage-green-->
-            <section class="color-bar" data-color="img/sage-green-3.png" data-text="En beroligende, støvet grøn (Sage-green), der trækker den dybe, nordiske skov helt tæt på. Skaber en stemning af balance, ro og frisk luft..">
-                <span class="dot green-dot"></span>
-                <section class="bar-text">
-                <h3>SAGE GREEN</h3>
-                <p>Afdæmpet, rolig og inspireret af naturen</p>
-                </section>
-            <span class="arrow">&gt;</span>
-          </section>
-          
-        <!--Knap 4: Lavender-mist-->
-            <section class="color-bar" data-color="img/lavender-mist-4.png" data-text="En sofistikeret, ultra-let violet nuance (Lavender-mist), der minder om kølig morgentåge. Moderne, legesyg og subtil på samme tid.">
-                <span class="dot lavender-dot"></span>
-                <div class="bar-text">
-                 <h3>LAVENDER-MIST</h3>
-                 <p>Subtil, kølig og magisk undertone</p>
-            </div>
-            <span class="arrow">&gt;</span>
-          </section>
-
-          <p id="colorDescription" class="color-dynamic-text">Minimalistisk, tidløs og uendelig ren (Moonlight-white). Fanger sollyset elegant og flyder i absolut perfekt ét med det moderne lyse nordiske hjem.</p>
-        
-        <!--CTA-knap under farverne-->
-        <div class="color-cta-group">
-            <a href="#" class="color-buy-button">Køb nu – 1.499,-</a>
-            <span class="shipping-info">
-                <img src="img/shipping-icon.png" alt="Lastbil ikon">
-                Fri fragt & 1-2 dages levering
-            </span>
-        </div>
-
-          
-        </section> <!-- Lukker .color-selectors -->
-
-      </section> <!-- Lukker .color-right -->
+  <div class="color-container">
       
-    </div> <!-- Lukker .color-container -->
-  </section> <!-- Lukker #colorSection -->
+    <div class="color-left">
+      <div class="image-wrapper">
+        <img id="speakerImage" src="img/moonlight-white-1.png" alt="Lumi Højtaler - Moonlight White">
+      </div>
+    </div>
+
+    <div class="color-right">
+      <h2>Find din personlige farve</h2>
+      <p class="color-intro">
+        Vores fire dæmpede pastelfarver er nøje udvalgt med afsæt i det milde, skandinaviske lys og elementer fra den vilde natur.
+      </p>
+          
+      <div class="color-selectors">
+        
+        <button type="button" class="color-bar active" data-color="img/moonlight-white-1.png" data-text="Minimalistisk, tidløs og uendelig ren (Moonlight-white). Fanger sollyset elegant og flyder i absolut perfekt ét med det moderne lyse nordiske hjem.">
+          <span class="dot white-dot"></span>
+          <span class="bar-text">
+            <span class="bar-title">MOONLIGHT WHITE</span>
+            <span class="bar-subtitle">Klassisk, lys og ultra-minimalistisk</span>
+          </span>
+          <span class="arrow">&gt;</span>
+        </button> 
+
+        <button type="button" class="color-bar" data-color="img/dusty-rose-2.png" data-text="En varm, dæmpet rosa tone (Dusty-rose), inspireret af solnedgange over klitterne. Giver rummet kant og en organisk, indbydende glød.">
+          <span class="dot rose-dot"></span>
+          <span class="bar-text">
+            <span class="bar-title">DUSTY ROSE</span>
+            <span class="bar-subtitle">Varm, blød og organisk elegance</span>
+          </span>
+          <span class="arrow">&gt;</span>
+        </button> 
+
+        <button type="button" class="color-bar" data-color="img/sage-green-3.png" data-text="En beroligende, støvet grøn (Sage-green), der trækker den dybe, nordiske skov helt tæt på. Skaber en stemning av balance, ro og frisk luft..">
+          <span class="dot green-dot"></span>
+          <span class="bar-text">
+            <span class="bar-title">SAGE GREEN</span>
+            <span class="bar-subtitle">Afdæmpet, rolig og inspireret af naturen</span>
+          </span>
+          <span class="arrow">&gt;</span>
+        </button>
+        
+        <button type="button" class="color-bar" data-color="img/lavender-mist-4.png" data-text="En sofistikeret, ultra-let violet nuance (Lavender-mist), der minder om kølig morgentåge. Moderne, legesyg og subtil på samme tid.">
+          <span class="dot lavender-dot"></span>
+          <span class="bar-text">
+            <span class="bar-title">LAVENDER-MIST</span>
+            <span class="bar-subtitle">Subtil, kølig og magisk undertone</span>
+          </span>
+          <span class="arrow">&gt;</span>
+        </button>
+
+        <p id="colorDescription" class="color-dynamic-text">Minimalistisk, tidløs og uendelig ren (Moonlight-white). Fanger sollyset elegant og flyder i absolut perfekt ét med det moderne lyse nordiske hjem.</p>
+      
+        <div class="color-cta-group">
+          <a href="#" class="color-buy-button">Køb nu – 1.499,-</a>
+          <span class="shipping-info">
+            <img src="img/shipping-icon.png" alt="Lastbil ikon">
+            Fri fragt & 1-2 dages levering
+          </span>
+        </div>
+        
+      </div> 
+    </div> 
+  </div> 
+</section> 
 
 
-<div class="collage-header">
+<!--Collage sektion-->
+
+<section class="collage-section">
+  <div class="collage-header">
     <h2>Let the memories flow</h2>
     <p>Lumina One er skabt til minder, musik og øjeblikke, der fortjener at blive delt. Tag os i dine yndlingsøjeblikke med Lumina One på Instagram @LuminaOne</p>
-</div>  
+  </div>  
 
-<section class="collage-grid">
-    
+  <ul class="collage-grid">
+    <li class="collage-item large">
+      <img src="img/picnic.png" alt="Lumina One på picnic">
+      <div class="collage-overlay">
+        <span class="user-profile">
+          <img src="img/instagram.png" alt="Instagram logo" class="insta-icon"> @Sofie_andersen
+        </span>
+        <p class="overlay-caption">Intet fuldender en sommeraften i parken som kold hvidvin, gode venner og sprød, god lyd fra Lumina One ✨🍷🧺 #luminaliving</p>
+        <div class="overlay-stats-row">
+          <span class="overlay-stat"><img src="img/heart-icon.png" alt="Hjerte"> 678</span>
+          <span class="overlay-stat"><img src="img/comment-icon.png" alt="Kommentar"> 104</span>
+        </div>
+      </div>
+    </li>
 
-    <!-- Billede 1: Picnic -->
-    <article class="collage-item large">
-        <img src="img/picnic.png" alt="Lumina One på picnic">
-        <section class="collage-overlay">
-            <!-- Top: Rigtigt Instagram logo + Brugernavn -->
-            <span class="user-profile">
-                <img src="img/instagram.png" alt="Instagram logo" class="insta-icon"> @Sofie_andersen
-            </span>
-            
-            <!-- Midte: Caption -->
-            <p class="overlay-caption">Intet fuldender en sommeraften i parken som kold hvidvin, gode venner og sprød, god lyd fra Lumina One ✨🍷🧺 #luminaliving</p>
-            
-            <!-- Bund: Tal og ikoner på linje -->
-            <div class="overlay-stats-row">
-                <span class="overlay-stat"><img src="img/heart-icon.png" alt="Hjerte"> 678</span>
-                <span class="overlay-stat"><img src="img/comment-icon.png" alt="Kommentar"> 104</span>
-            </div>
-        </section>
-    </article>
+    <li class="collage-item">
+      <img src="img/living-room.png" alt="Lumina One i stuen">
+      <div class="collage-overlay">
+        <span class="user-profile">
+          <img src="img/instagram.png" alt="Instagram logo" class="insta-icon"> @Jessica_kangas
+        </span>
+        <p class="overlay-caption">Lumina One er med overalt. Fra stranddage til picnics og sene sommeraftener.. Bedste lyd, uden besvær. ☀️🧡 #LoveLumina</p>
+        <div class="overlay-stats-row">
+          <span class="overlay-stat"><img src="img/heart-icon.png" alt="Hjerte"> 910</span>
+          <span class="overlay-stat"><img src="img/comment-icon.png" alt="Kommentar"> 110</span>
+        </div>
+      </div>
+    </li>
 
-    <!-- Billede 2: Living-room -->
-    <article class="collage-item">
-        <img src="img/living-room.png" alt="Lumina One i stuen">
-        <section class="collage-overlay">
-            <span class="user-profile">
-                <img src="img/instagram.png" alt="Instagram logo" class="insta-icon"> @Jessica_kangas
-            </span>
-            <p class="overlay-caption">Lumina One er med overalt. Fra stranddage til picnics og sene sommeraftener.. Bedste lyd, uden besvær. ☀️🧡 #LoveLumina</p>
-            
-            <div class="overlay-stats-row">
-                <span class="overlay-stat"><img src="img/heart-icon.png" alt="Hjerte"> 910</span>
-                <span class="overlay-stat"><img src="img/comment-icon.png" alt="Kommentar"> 110</span>
-            </div>
-        </section>
-    </article>
+    <li class="collage-item">
+      <img src="img/beach.png" alt="Lumina One på stranden">
+      <div class="collage-overlay">
+        <span class="user-profile">
+          <img src="img/instagram.png" alt="Instagram logo" class="insta-icon"> @Lasse_Hjort
+        </span>
+        <p class="overlay-caption">Vores favorit på picnic. Lumina One skaber den perfekt stemning uanset hvor vi er. ✨ #LuminaOne</p>
+        <div class="overlay-stats-row">
+          <span class="overlay-stat"><img src="img/heart-icon.png" alt="Hjerte"> 800</span>
+          <span class="overlay-stat"><img src="img/comment-icon.png" alt="Kommentar"> 333</span>
+        </div>
+      </div>
+    </li>
 
-    <!-- Billede 3: Beach -->
-    <article class="collage-item">
-        <img src="img/beach.png" alt="Lumina One på stranden">
-        <section class="collage-overlay">
-            <span class="user-profile">
-                <img src="img/instagram.png" alt="Instagram logo" class="insta-icon"> @Lasse_Hjort
-            </span>
-            <p class="overlay-caption">Vores favorit på picnic. Lumina One skaber den perfekt stemning uanset hvor vi er. ✨ #LuminaOne</p>
-            
-            <div class="overlay-stats-row">
-                <span class="overlay-stat"><img src="img/heart-icon.png" alt="Hjerte"> 800</span>
-                <span class="overlay-stat"><img src="img/comment-icon.png" alt="Kommentar"> 333</span>
-            </div>
-        </section>
-    </article>
-
-    <!-- Billede 4: Party -->
-    <article class="collage-item">
-        <img src="img/party.png" alt="Lumina One til fest">
-        <section class="collage-overlay">
-            <span class="user-profile">
-                <img src="img/instagram.png" alt="Instagram logo" class="insta-icon"> @Malthe_Holle
-            </span>
-            <p class="overlay-caption">Smuk, enkel og lyder sindssygt godt. Lumina One er blevet et must-have når vi tager ud i det blå 🏕️🗺️🛶 #LuminaLivingLife</p>
-            
-            <div class="overlay-stats-row">
-                <span class="overlay-stat"><img src="img/heart-icon.png" alt="Hjerte"> 555</span>
-                <span class="overlay-stat"><img src="img/comment-icon.png" alt="Kommentar"> 123</span>
-            </div>
-        </section>
-    </article>
-
+    <li class="collage-item">
+      <img src="img/party.png" alt="Lumina One til fest">
+      <div class="collage-overlay">
+        <span class="user-profile">
+          <img src="img/instagram.png" alt="Instagram logo" class="insta-icon"> @Malthe_Holle
+        </span>
+        <p class="overlay-caption">Smuk, enkel og lyder sindssygt godt. Lumina One er blevet et must-have når vi tager ud i det blå 🏕️🗺️🛶 #LuminaLivingLife</p>
+        <div class="overlay-stats-row">
+          <span class="overlay-stat"><img src="img/heart-icon.png" alt="Hjerte"> 555</span>
+          <span class="overlay-stat"><img src="img/comment-icon.png" alt="Kommentar"> 123</span>
+        </div>
+      </div>
+    </li>
+  </ul>
 </section>
 
-
-
-<!-- PRODUKT SPECIFIKATIONER SEKTION -->
+<!--Produkt specifikationer sketion-->
 
 <section id="produktspecifikation">
-    <div class="details-container">
-        
-        <!-- Venstre side: Billeder i to rækker -->
-        <div class="details-images">
-            
-            <!-- Øverste række af billeder -->
-            <div class="img-row-top">
-                <img src="img/left-top.png" alt="Lumi højttaler" class="details-img left-top">
-                <img src="img/right-top.png" alt="Lumi hank" class="details-img right-top">
-            </div>
+  <div class="details-container">
+      
+    <div class="details-images">
+      <div class="img-row-top">
+        <img src="img/left-top.png" alt="Lumi højttaler" class="details-img left-top">
+        <img src="img/right-top.png" alt="Lumi hank" class="details-img right-top">
+      </div>
 
-            <!-- Nederste række af billeder -->
-            <div class="img-row-bottom">
-                <img src="img/left-bottom.png" alt="Lumi bagside tæt på" class="details-img left-bottom">
-                <img src="img/middle-bottom.png" alt="Lumi logo" class="details-img middle-bottom">
-                <img src="img/right-bottom.png" alt="Lumi bagside" class="details-img right-bottom">
-            </div>
-
-        </div> <!-- Lukker: .details-images -->
-
-
-        <!-- Højre side: Tekstindhold og specifikationsliste -->
-        <div class="details-content">
-                
-            <!-- Overskrift og introduktion -->
-            <header class="details-header">
-                <h2>Skabt til stemninger</h2>
-                <p>Transportabel lyd designet til hverdage, aftener og spontane øjeblikke.</p>
-            </header>
-
-        <!-- Liste med de klikbare produktspecifikationer (Herunder kodes harmonika-effekten)-->
-        <div class="specifications-list">
-
-                <!-- Specifikation 1: Lyd -->
-                <article class="spec-item">
-                    <button class="spec-toggle">
-                        <span>Lyd</span><span class="icon">+</span>
-                    </button>
-                    <p class="spec-panel">LUMINA One leverer op til 100 dB lydstyrke med en klar og balanceret lydoplevelse. Højtaleren er kraftfuld nok til strandture, picnic og sociale sammenkomster, uden at lyden bliver for skarp eller overvældende.</p>
-                </article>
-
-                <!-- Specifikation 2: Batteri og tilslutning -->
-                <article class="spec-item">
-                    <button class="spec-toggle">
-                        <span>Batteri og tilslutning</span><span class="icon">+</span>
-                    </button>
-                    <p class="spec-panel">LUMINA One har op til 18 timers batteritid og oplades nemt via USB-C. Højtaleren understøtter Bluetooth 5.3 og AUX-indgang for stabil og fleksibel afspilning. Det er også muligt at forbinde op til tre andre LUMINA One enheder for en større lydoplevelse.</p>
-                </article>
-
-                <!-- Specifikation 3: Vandafvisende -->
-                <article class="spec-item">
-                    <button class="spec-toggle">
-                        <span>Vandafvisende</span><span class="icon">+</span>
-                    </button>
-                    <p class="spec-panel">LUMINA One er IPX5-certificeret og designet to modstå let regn, vandsprøjt og pool-splash. Det gør højtaleren velegnet til udendørs brug, hvor musik og spontane øjeblikke kan fortsætte uden bekymringer.</p>
-                </article>
-
-                <!-- Specifikation 4: Social connect -->
-                <article class="spec-item">
-                    <button class="spec-toggle">
-                        <span>Social connect</span><span class="icon">+</span>
-                    </button>
-                    <p class="spec-panel">Social Connect gør det muligt at kombinere playlister med venner direkte gennem appen, så alle kan bidrage til musikken. Funktionen er udviklet til fælles oplevelser og gør det nemt at skabe den rette stemning til sociale arrangementer.</p>
-                </article>
-
-                <!-- Specifikation 5: Vægt -->
-                <article class="spec-item">
-                    <button class="spec-toggle">
-                        <span>Vægt</span><span class="icon">+</span>
-                    </button>
-                    <p class="spec-panel">Med en vægt på kun 3 kg er LUMINA One nem at tage med på farten. Højtaleren er designet til mobil brug og kan bæres i hånden eller transporteres i den medfølgende stof-tote bag.</p>
-                </article>
-
-            </div> <!-- Lukker: .specifications-list -->
-        </div> <!-- Lukker: .details-content (Højre side) -->
-    </div> <!-- Lukker: .details-container -->
-
-            <!-- Centreret knap i bunden af hele sektionen -->
-             <div class="details-button-container">
-                 <button class="explore-btn">UDFORSK KOLLEKTIONEN</button>
-            </div>
-    </section> <!-- Lukker: #produktspecifikation -->
-
-
-<!--VIDEO-->
-<aside class="video-section">
-    <div class="video-container">
-        <video src="img/video.mov" autoplay loop muted playsinline class="beach-video"></video>
+      <div class="img-row-bottom">
+        <img src="img/left-bottom.png" alt="Lumi bagside tæt på" class="details-img left-bottom">
+        <img src="img/middle-bottom.png" alt="Lumi logo" class="details-img middle-bottom">
+        <img src="img/right-bottom.png" alt="Lumi bagside" class="details-img right-bottom">
+      </div>
     </div>
-</aside>
 
+    <div class="details-content">
+      <header class="details-header">
+        <h2>Skabt til stemninger</h2>
+        <p>Transportabel lyd designet til hverdage, aftener og spontane øjeblikke.</p>
+      </header>
 
-<!--ANMELDELSER SEKTION-->
-<section class="reviews-section">
- 
-    <article class="reviews-header">
-        <h3>Anmeldelser</h3>
-        <h2>+1.000 glade kunder</h2>
-        <p>Se hvorfor vores kunder elsker Lumina One i hverdagen.</p>
-    </article>
-
-    <section class="reviews-cards">
-        
-        <article class="review-card">
-            <img src="img/stars.png" alt="5 stjerner" class="review-stars">
-            <h3 class="review-subtitle">BEDSTE HØJTALER NOGENSINDE</h3>
-            <p class="review-text">"Jeg har haft min Lumina One i nogle måneder nu. Moonlight White-farven er så smuk og ren. Den pynter perfekt på hylden i stuen."</p>
-            <h4 class="review-author">- Jessica Kangas.</h4>
-        </article>
-
-        <article class="review-card">
-            <img src="img/stars.png" alt="5 stjerner" class="review-stars">
-            <h3 class="review-subtitle">VIRKELIG GOD LYD</h3>
-            <p class="review-text">"Købte min i Dusty Rose til mit soveværelse. Lyden er vildt klar, og den er utrolig nem at bruge. Den er 10/10!!!"</p>
-            <h4 class="review-author">-Martin</h4>
-        </article>
-
-        <article class="review-card">
-            <img src="img/stars.png" alt="5 stjerner" class="review-stars">
-            <h3 class="review-subtitle">NEM AT HAVE MED PÅ FARTEN</h3>
-            <p class="review-text">"Den bløde kernelæderhank gør den så nem at snuppe med ud i haven eller på stranden. Batteriet holder forevigt. God service"</p>
-            <h4 class="review-author">- Murat.</h4>
-        </article>
-
-        <article class="review-card">
-            <img src="img/stars.png" alt="5 stjerner" class="review-stars">
-            <h3 class="review-subtitle">GØR HVERDAGEN SMUKKERE</h3>
-            <p class="review-text">"At have den stående ved siden af mine friske tulipaner i stuen... den er bare det perfekte accessory. Og lyden er virkelig god!"</p>
-            <h4 class="review-author">- Lars.</h4>
-        </article>
-
-         <article class="review-card">
-            <img src="img/stars.png" alt="5 stjerner" class="review-stars">
-            <h3 class="review-subtitle">PERFEKT AT HAVE MED TIL FEST</h3>
-            <p class="review-text">"Jeg har haft min Lumina One i nogle måneder nu. Moonlight White-farven er så smuk. Den pynter perfekt på hylden i stuen."</p>
-            <h4 class="review-author">- Julie.</h4>
-        </article>
-
-         <article class="review-card">
-            <img src="img/stars.png" alt="5 stjerner" class="review-stars">
-            <h4 class="review-subtitle">BEDSTE KØB NOGENSINDE</h4>
-            <p class="review-text">"Meget bedre end andre højttallere jeg nogensinde har haft. Den har en fantatisk lyd og klang. Kæmpe anbefaling herfra"</p>
-            <h4 class="review-author">- Smilla.</h4>
-        </article>
-
-    </section>
-
-    <section class="reviews-arrow-container">
-        <img src="img/arrow.png" alt="Scroll højre" class="reviews-scroll-arrow" id="reviewScrollBtn">
-    </section>
-
-    <article class="trustpilot-container">
-        <div class="trustpilot-left">
-            <span class="trustpilot-star">&#9733;</span>
-            <span class="trustpilot-brand">Trustpilot</span>
-            <p class="trustpilot-score">Fremragende <span>4.8</span> ud af 5</p>
+      <div class="specifications-list">
+        <div class="spec-item">
+          <button type="button" class="spec-toggle">
+            <span>Lyd</span><span class="icon">+</span>
+          </button>
+          <p class="spec-panel">LUMINA One leverer op til 100 dB lydstyrke med en klar og balanceret lydoplevelse. Højtaleren er kraftfuld nok til strandture, picnic og sociale sammenkomster, uden at lyden bliver for skarp eller overvældende.</p>
         </div>
-        <p class="trustpilot-right">Baseret på 1.450 verificerede anmeldelser i Skandinavien</p>
+
+        <div class="spec-item">
+          <button type="button" class="spec-toggle">
+            <span>Batteri og tilslutning</span><span class="icon">+</span>
+          </button>
+          <p class="spec-panel">LUMINA One har op til 18 timers battery-tid og oplades nemt via USB-C. Højtaleren understøtter Bluetooth 5.3 og AUX-indgang for stabil og fleksibel afspilning. Det is også muligt at Forbinde op til tre andre LUMINA One enheder for en større lydoplevelse.</p>
+        </div>
+
+        <div class="spec-item">
+          <button type="button" class="spec-toggle">
+            <span>Vandafvisende</span><span class="icon">+</span>
+          </button>
+          <p class="spec-panel">LUMINA One er IPX5-certificeret og designet til at modstå let regn, vandsprøjt og pool-splash. Det gør højtaleren velegnet til udendørs brug, hvor musik og spontane øjeblikke kan fortsætte uden bekymringer.</p>
+        </div>
+
+        <div class="spec-item">
+          <button type="button" class="spec-toggle">
+            <span>Social connect</span><span class="icon">+</span>
+          </button>
+          <p class="spec-panel">Social Connect gør det muligt at kombinere playlister med venner direkte gennem appen, så alle kan bidrage til musikken. Funktionen er udviklet til fælles oplevelser og gør det nemt at skabe den rette stemning til sociale arrangementer.</p>
+        </div>
+
+        <div class="spec-item">
+          <button type="button" class="spec-toggle">
+            <span>Vægt</span><span class="icon">+</span>
+          </button>
+          <p class="spec-panel">Med en vægt på kun 3 kg er LUMINA One nem at tage med på farten. Højtaleren er designet til mobil brug og kan bæres i hånden eller transporteres i den medfølgende stof-tote bag.</p>
+        </div>
+      </div> 
+    </div> 
+  </div> 
+
+  <div class="details-button-container">
+    <button type="button" class="explore-btn">UDFORSK KOLLEKTIONEN</button>
+  </div>
+</section> 
+
+
+<!--Video sektion-->
+
+<div class="video-section">
+  <div class="video-container">
+    <video src="img/video.mov" autoplay loop muted playsinline class="beach-video"></video>
+  </div>
+</div>
+
+
+<!--Anmeldelse sektion-->
+
+<section class="reviews-section">
+  <div class="reviews-header">
+    <h2>+1.000 glade kunder</h2>
+    <p class="reviews-sub">Anmeldelser</p> 
+    <p>See hvorfor vores kunder elsker Lumina One i hverdagen.</p>
+  </div>
+
+  <div class="reviews-cards">
+    <article class="review-card">
+      <img src="img/stars.png" alt="5 stjerner" class="review-stars">
+      <h3 class="review-subtitle">BEDSTE HØJTALER NOGENSINDE</h3>
+      <p class="review-text">"Jeg har haft min Lumina One i nogle måneder nu. Moonlight White-farven er så smuk og ren. Den pynter perfekt på hylden i stuen."</p>
+      <h4 class="review-author">- Jessica Kangas.</h4>
     </article>
 
+    <article class="review-card">
+      <img src="img/stars.png" alt="5 stjerner" class="review-stars">
+      <h3 class="review-subtitle">VIRKELIG GOD LYD</h3>
+      <p class="review-text">"Købte min i Dusty Rose til mit soveværelse. Lyden er vildt klar, og den er utrolig nem at bruge. Den er 10/10!!!"</p>
+      <h4 class="review-author">- Martin</h4>
+    </article>
+
+    <article class="review-card">
+      <img src="img/stars.png" alt="5 stjerner" class="review-stars">
+      <h3 class="review-subtitle">NEM AT HAVE MED PÅ FARTEN</h3>
+      <p class="review-text">"Den bløde kernelæderhank gør den så nem at snuppe med ud i haven eller på stranden. Batteriet holder forevigt. God service"</p>
+      <h4 class="review-author">- Murat.</h4>
+    </article>
+
+    <article class="review-card">
+      <img src="img/stars.png" alt="5 stjerner" class="review-stars">
+      <h3 class="review-subtitle">GØR HVERDAGEN SMUKKERE</h3>
+      <p class="review-text">"At have den stående ved siden af mine friske tulipaner i stuen... den er bare det perfekte accessory. Og lyden er virkelig god!"</p>
+      <h4 class="review-author">- Lars.</h4>
+    </article>
+
+    <article class="review-card">
+      <img src="img/stars.png" alt="5 stjerner" class="review-stars">
+      <h3 class="review-subtitle">PERFEKT AT HAVE MED TIL FEST</h3>
+      <p class="review-text">"Jeg har haft min Lumina One i nogle måneder nu. Moonlight White-farven er så smuk. Den pynter perfekt på hylden i stuen."</p>
+      <h4 class="review-author">- Julie.</h4>
+    </article>
+
+    <article class="review-card">
+      <img src="img/stars.png" alt="5 stjerner" class="review-stars">
+      <h3 class="review-subtitle">BEDSTE KØB NOGENSINDE</h3>
+      <p class="review-text">"Meget bedre end andre højttalere jeg nogensinde har haft. Den har en fantastisk lyd og klang. Kæmpe anbefaling herfra"</p>
+      <h4 class="review-author">- Smilla.</h4>
+    </article>
+  </div>
+
+  <div class="reviews-arrow-container">
+    <img src="img/arrow.png" alt="Scroll højre" class="reviews-scroll-arrow" id="reviewScrollBtn">
+  </div>
+
+  <div class="trustpilot-container">
+    <div class="trustpilot-left">
+      <span class="trustpilot-star">&#9733;</span>
+      <span class="trustpilot-brand">Trustpilot</span>
+      <p class="trustpilot-score">Fremragende <span>4.8</span> ud af 5</p>
+    </div>
+    <p class="trustpilot-right">Baseret på 1.450 verificerede anmeldelser i Skandinavien</p>
+  </div>
 </section>
 
+</main>
 
 
+<!--Footer sektion-->
 
 <footer class="main-footer">
-    <div class="footer-container">
-        
-  <div class="footer-col footer-about">
-    <h2 class="footer-logo">LUMINA</h2>
-    <p class="footer-text">
+  <div class="footer-container">
+      
+    <div class="footer-col footer-about">
+      <p class="footer-logo">LUMINA</p>
+      <p class="footer-text">
         Harmoni mellem kompromisløs skandinavisk akustik og et taktilt formsprog. Skabt til at lade musikken og minderne flyde frit.
-    </p>
-    <div class="footer-payment">
+      </p>
+      <div class="footer-payment">
         <img src="img/visa-icon.png" alt="Visa">
         <img src="img/mastercard-icon.png" alt="Mastercard">
         <img src="img/applepay-icon.png" alt="Apple Pay">
         <img src="img/card-icon.png" alt="Betalingskort">
+      </div>
     </div>
-</div>
 
-        <div class="footer-col">
-            <h3>UDFORSK</h3>
-            <ul>
-                <li><a href="#">Vores vision</a></li>
-                <li><a href="#">Specifikationer</a></li>
-                <li><a href="#">Kollektionen</a></li>
-                <li><a href="#">Social proof</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-col">
-            <h3>SUPPORT</h3>
-            <ul>
-                <li><a href="#">Levering & Retur</a></li>
-                <li><a href="#">Handelsbetingelser</a></li>
-                <li><a href="#">Privatlivspolitik</a></li>
-                <li><a href="#">FAQ & Support</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-col footer-newsletter">
-            <h3>INSPIRATION I DIN INDBAKKE</h3>
-            <p class="newsletter-intro">
-                Tilmeld dig vores nyhedsbrev for at modtage eksklusive historier, æstetiske tips samt <strong>10% rabat</strong> på din første bestilling.
-            </p>
-            
-            <form id="newsletterForm" class="newsletter-form">
-                <div class="input-group">
-                    <input type="email" id="newsletterEmail" placeholder="Din e-mailadresse" required>
-                    <button type="submit" class="newsletter-submit-btn" aria-label="Tilmeld nyhedsbrev">&rarr;</button>
-                </div>
-                <p id="newsletterSuccess" class="newsletter-success-msg"></p>
-            </form>
-        </div>
-
+    <div class="footer-col">
+      <h3>UDFORSK</h3>
+      <ul>
+        <li><a href="#">Vores vision</a></li>
+        <li><a href="#">Specifikationer</a></li>
+        <li><a href="#">Kollektionen</a></li>
+        <li><a href="#">Social proof</a></li>
+      </ul>
     </div>
+
+    <div class="footer-col">
+      <h3>SUPPORT</h3>
+      <ul>
+        <li><a href="#">Levering & Retur</a></li>
+        <li><a href="#">Handelsbetingelser</a></li>
+        <li><a href="#">Privatlivspolitik</a></li>
+        <li><a href="#">FAQ & Support</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col footer-newsletter">
+      <h3>INSPIRATION I DIN INDBAKKE</h3>
+      <p class="newsletter-intro">
+        Tilmeld dig vores nyhedsbrev for at modtage eksklusive historier, æstetiske tips samt <strong>10% rabat</strong> på din første bestilling.
+      </p>
+        
+      <form id="newsletterForm" class="newsletter-form">
+        <div class="input-group">
+          <input type="email" id="newsletterEmail" placeholder="Din e-mailadresse" required>
+          <button type="submit" class="newsletter-submit-btn" aria-label="Tilmeld nyhedsbrev">&rarr;</button>
+        </div>
+        <p id="newsletterSuccess" class="newsletter-success-msg"></p>
+      </form>
+    </div>
+
+  </div>
 </footer>
 
-
-
-
-
-
-
-</main> 
-    
 </body>
 </html>
