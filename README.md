@@ -69,7 +69,6 @@ Jeg har anvendt **Nu HTML Checker (W3C HTML Validator)** til at validere HTML-ko
 
 Valideringen viste ingen fejl.
 
-Der blev vist én advarsel om dokumentstrukturen, da validatoren anbefaler, at alle `<section>`-elementer indeholder en overskrift af hensyn til semantik og tilgængelighed.
 
 Eventuelle fejl blev løbende rettet under udviklingen i Visual Studio Code, indtil HTML-koden kunne valideres uden fejl.
 
