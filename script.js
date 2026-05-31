@@ -10,8 +10,8 @@ const colorDescriptionText = document.querySelector('#colorDescription');
 
 colorBars.forEach(bar => {
     bar.addEventListener('click', () => {
-        colorBars.forEach(b => b.classList.remove('active')); /* Fjerner mørk ramme fra de andre containere */
-        bar.classList.add('active'); /* Mørk ramme ved klik på container*/
+        colorBars.forEach(b => b.classList.remove('active')); 
+        bar.classList.add('active'); 
         const newImgSrc = bar.getAttribute('data-color');
         if (newImgSrc) {
             mainProductImg.src = newImgSrc;
