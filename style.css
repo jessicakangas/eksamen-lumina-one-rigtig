@@ -410,6 +410,7 @@
 /* Asymmetrisk layout på billederne */
 .collage-grid {
     display: grid;
+    position: center;
     grid-template-columns: 1.2fr 1fr 1fr; 
     grid-template-rows: 250px 250px;
     gap: 24px;
@@ -1015,6 +1016,10 @@
 
 .newsletter-submit-btn:hover {
     transform: translateX(4px);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 
