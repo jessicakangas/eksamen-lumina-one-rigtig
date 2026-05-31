@@ -35,7 +35,7 @@ Landingpagen giver brugeren mulighed for at:
 - Indeholder alle billeder og ikoner, som anvendes på landingpagen.
 - Eksempelvis produktbilleder, hero-billede, Trustpilot-ikoner og øvrige grafiske elementer.
 
-![file-structure](/img/file-structure.png.png)
+![file-structure](img/file-structure.png)
 
 
 ### Hvorfor har jeg valgt denne struktur?
@@ -58,7 +58,7 @@ Valideringen viste ingen fejl eller advarsler.
 Eventuelle fejl blev løbende rettet under udviklingen, indtil CSS-koden kunne valideres uden fejl.
 
 ### Dokumentation
-![css-validering](/img/css-validering.png)
+![css-validation](img/css-validation.png)
 
 ### Validering af HTML
 Jeg har valideret projektets HTML-fil:
@@ -75,7 +75,7 @@ Eventuelle fejl blev løbende rettet under udviklingen i Visual Studio Code, ind
 
 
 ### Dokumentation
-![html-validering](/img/html-validation.png)
+![html-validation](/img/html-validation.png)
 
 
 
