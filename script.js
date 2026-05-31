@@ -85,7 +85,7 @@ if (newsletterForm && newsletterEmail && newsletterSuccess) {
         const userEmail = newsletterEmail.value.trim();
         
         // Viser den fine succes-besked direkte under linjen
-        newsletterSuccess.textContent = `Tak! Vi har sendt din 10% rabatkode til: ${userEmail}`;
+        newsletterSuccess.textContent = `Tak! Vi har sendt din 10% rabatkode til din mail! ${userEmail}`;
         
         // Tømmer feltet igen
         newsletterEmail.value = '';

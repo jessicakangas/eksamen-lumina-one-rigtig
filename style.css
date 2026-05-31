@@ -410,12 +410,11 @@
 /* Asymmetrisk layout på billederne */
 .collage-grid {
     display: grid;
-    position: center;
-    grid-template-columns: 1.2fr 1fr 1fr; 
+    grid-template-columns: 1.2fr 1fr 1fr;
     grid-template-rows: 250px 250px;
     gap: 24px;
     max-width: 1000px;
-    margin: 0 auto px;  
+    margin: 0 auto 50px auto;
 }
 
 /* Rammen om hvert enkelt billede */
@@ -968,7 +967,7 @@
 }
 
 .newsletter-intro {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 300;
     line-height: 1.6;
     color: #cccccc;
